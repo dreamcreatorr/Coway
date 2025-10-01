@@ -390,6 +390,12 @@ img {
     transform: scale(1.1);
 }
 
+.back-to-top i {
+    color: var(--primary-color); /* 设置图标颜色 */
+    font-size: 1.5rem; /* 调整图标大小 */
+    transition: color 0.3s;
+}
+
 /* --- WhatsApp 悬浮按钮 --- */
 .whatsapp-float {
     position: fixed;
@@ -410,8 +416,8 @@ img {
 }
 
 .whatsapp-float img {
-    width: 100%;  /* 让图片宽度充满容器 */
-    height: 100%; /* 让图片高度充满容器 */
+    width: 36px;  /* 调整图标大小，使其在圆形背景中更协调 */
+    height: 36px; /* 保持图标的原始比例 */
 }
 
 .whatsapp-float:hover {

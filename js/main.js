@@ -1,12 +1,16 @@
 // --- 动态加载头部和尾部 ---
-async function loadComponent(url, placeholderId) {
+async function loadComponent(url, placeholderId, isHeader = false) {
     try {
         const response = await fetch(url);
         if (!response.ok) throw new Error(`Could not load ${url}: ${response.statusText}`);
         const text = await response.text();
         const placeholder = document.getElementById(placeholderId);
         if (placeholder) {
-            placeholder.outerHTML = text;
+            // 使用 innerHTML 替换占位符内容，而不是替换占位符本身
+            placeholder.innerHTML = text;
+            if (isHeader) {
+                initializeHeaderScripts(); // 如果是头部，则初始化相关脚本
+            }
         }
     } catch (error) {
         console.error('Failed to load component:', error);
@@ -14,148 +18,139 @@ async function loadComponent(url, placeholderId) {
 }
 
 async function loadLayout() {
-    await loadComponent('includes/header.html', 'header-placeholder');
-    await loadComponent('includes/footer.html', 'footer-placeholder');
-    initializePage(); // 加载完布局后，初始化页面上的其他脚本
+    // 标记正在加载的是头部
+    await loadComponent('/includes/header.html', 'header-placeholder', true); 
+    // 加载页脚
+    await loadComponent('/includes/footer.html', 'footer-placeholder');
 }
 
-// --- 移动端汉堡菜单逻辑 ---
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLinks = document.querySelectorAll(".nav-link");
+// --- 初始化头部相关脚本的函数 ---
+function initializeHeaderScripts() {
+    // --- 移动端汉堡菜单逻辑 ---
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+    const navLinks = document.querySelectorAll(".nav-link");
 
-function toggleMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-}
-
-function closeMenu() {
-    if (hamburger.classList.contains("active")) {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
+    function toggleMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
     }
+
+    function closeMenu() {
+        if (hamburger && hamburger.classList.contains("active")) {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    }
+
+    if (hamburger) hamburger.addEventListener("click", toggleMenu);
+    if (navLinks) navLinks.forEach(link => link.addEventListener("click", closeMenu));
+
+    // --- 产品筛选逻辑 ---
+    const filterLinks = document.querySelectorAll(".filter-link");
+    if (filterLinks.length > 0) {
+        filterLinks.forEach(link => {
+            link.addEventListener("click", handleFilterClick);
+        });
+    }
+
+    // 页面加载时根据URL参数或默认值应用筛选
+    const urlParams = new URLSearchParams(window.location.search);
+    const categoryFromUrl = urlParams.get('category') || 'all';
+    applyFilter(categoryFromUrl);
 }
 
-hamburger.addEventListener("click", toggleMenu);
-navLinks.forEach(link => link.addEventListener("click", closeMenu));
+// 筛选链接点击事件处理函数
+function handleFilterClick(e) {
+    const link = e.currentTarget;
+    const selectedCategory = link.getAttribute("data-category");
 
-// --- 产品筛选逻辑 ---
-const filterLinks = document.querySelectorAll(".filter-link");
-const productCards = document.querySelectorAll(".product-card");
-
-// 初始化产品视图函数
-function initializeProductView() {
-    const activeFilter = document.querySelector('.filter-link.active-filter');
-    const initialCategory = activeFilter ? activeFilter.getAttribute('data-category') : 'all';
-
-    productCards.forEach(card => {
-        const cardCategory = card.getAttribute("data-category");
-        const shouldShow = (initialCategory === "all" || initialCategory === cardCategory);
-        card.classList.toggle('hide', !shouldShow);
-    });
-}
-
-filterLinks.forEach(link => {
-    link.addEventListener("click", function(e) {
-        e.preventDefault(); // 阻止链接默认的跳转行为
-
-        const selectedCategory = this.getAttribute("data-category");
-        
-        // 使用 History API 更新 URL，而不是直接跳转
+    // 判断是否在首页 (通过 hero section 判断)
+    if (document.getElementById('hero')) { 
+        e.preventDefault();
         const url = new URL(window.location);
         url.searchParams.set('category', selectedCategory);
-        // 使用 pushState 更新历史记录
-        history.pushState({category: selectedCategory}, '', url);
-
-        // 手动调用筛选函数
+        // 更新URL并滚动到产品区
+        history.pushState({category: selectedCategory}, '', url.pathname + url.search + '#products');
         applyFilter(selectedCategory);
-    });
-});
+    }
+    // 如果不在首页，则a标签的默认href行为（跳转到首页并带上参数）是正确的，无需阻止。
+}
 
 // 封装筛选逻辑为一个函数
 function applyFilter(category) {
+    const filterLinks = document.querySelectorAll(".filter-link");
+    const productCards = document.querySelectorAll(".product-card");
+
     // 更新导航链接的激活状态
-    filterLinks.forEach(item => {
-        item.classList.toggle('active-filter', item.getAttribute('data-category') === category);
-    });
+    if (filterLinks.length > 0) {
+        filterLinks.forEach(item => {
+            item.classList.toggle('active-filter', item.getAttribute('data-category') === category);
+        });
+    }
 
     // 筛选产品卡片
-    productCards.forEach(card => {
-        const cardCategory = card.getAttribute("data-category");
-        const shouldShow = (category === "all" || category === cardCategory);
-        card.classList.toggle('hide', !shouldShow);
-    });
+    if (productCards.length > 0) {
+        productCards.forEach(card => {
+            const cardCategory = card.getAttribute("data-category");
+            const shouldShow = (category === "all" || category === cardCategory);
+            card.classList.toggle('hide', !shouldShow);
+        });
+    }
 }
 
 // --- 联系表单提交逻辑 ---
-const contactForm = document.getElementById('contact-form');
-const formStatus = document.getElementById('form-status');
+function initializeContactForm() {
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
 
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault(); // 阻止表单默认提交行为
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // 阻止表单默认提交行为
 
-        const form = e.target;
-        const data = new FormData(form);
-        const action = "https://formsubmit.co/jincapp@gmail.com"; // 替换成你的邮箱
+            const form = e.target;
+            const data = new FormData(form);
+            const action = "https://formsubmit.co/jincapp@gmail.com"; // 替换成你的邮箱
 
-        formStatus.textContent = '正在发送...';
-        formStatus.style.color = '#555';
+            formStatus.textContent = '正在发送...';
+            formStatus.style.color = '#555';
 
-        fetch(action, {
-            method: 'POST',
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                formStatus.textContent = '感谢您的留言，我们已收到您的讯息！';
-                formStatus.style.color = 'green';
-                form.reset(); // 提交成功后清空表单
-            } else {
-                formStatus.textContent = '提交失败，请稍后再试。';
+            fetch(action, {
+                method: 'POST',
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    formStatus.textContent = '感谢您的留言，我们已收到您的讯息！';
+                    formStatus.style.color = 'green';
+                    form.reset(); // 提交成功后清空表单
+                } else {
+                    formStatus.textContent = '提交失败，请稍后再试。';
+                    formStatus.style.color = 'red';
+                }
+            }).catch(error => {
+                formStatus.textContent = '网络错误，请检查您的网络连接。';
                 formStatus.style.color = 'red';
-            }
-        }).catch(error => {
-            formStatus.textContent = '网络错误，请检查您的网络连接。';
-            formStatus.style.color = 'red';
+            });
         });
-    });
+    }
 }
 
 // --- 页面加载时根据URL参数自动筛选产品 ---
 document.addEventListener('DOMContentLoaded', () => {
-    // 首先，根据HTML中的 active-filter 初始化视图
-    initializeProductView();
-
-    // 1. 页面首次加载时，根据URL参数筛选
-    const urlParams = new URLSearchParams(window.location.search);
-    const categoryFromUrl = urlParams.get('category');
-
-    if (categoryFromUrl) {
-        applyFilter(categoryFromUrl);
-    }
+    loadLayout();
+    initializeContactForm();
+    setupBackToTopButton();
 });
 
 // 监听浏览器前进/后退事件
 window.addEventListener('popstate', (event) => {
     const urlParams = new URLSearchParams(window.location.search);
-    const category = urlParams.get('category');
-    if (category) {
-        applyFilter(category);
-    } else {
-        applyFilter('all'); // 如果没有分类参数，则显示全部
-    }
+    const category = urlParams.get('category') || 'all';
+    applyFilter(category);
 });
-
-// --- 页面初始化总入口 ---
-function initializePage() {
-    // 这里放置所有需要在布局加载后执行的代码
-    // （目前，所有代码都可以直接运行，因为它们是基于事件监听的）
-}
-
-document.addEventListener('DOMContentLoaded', loadLayout);
 
 // --- "返回顶部" 按钮逻辑 ---
 function setupBackToTopButton() {
@@ -164,7 +159,7 @@ function setupBackToTopButton() {
     backToTopButton.setAttribute('href', '#'); // 使用'#'作为备用链接
     backToTopButton.setAttribute('aria-label', '返回顶部');
     backToTopButton.classList.add('back-to-top');
-    backToTopButton.innerHTML = '<img src="images/back-top_icon.png" alt="返回顶部">'; // 使用图片作为按钮图标
+    backToTopButton.innerHTML = '<i class="fas fa-arrow-up"></i>'; // 使用 Font Awesome 图标
 
     // 2. 将按钮添加到页面中
     document.body.appendChild(backToTopButton);
@@ -211,5 +206,3 @@ function scrollToTop(duration) {
 
     requestAnimationFrame(animation);
 }
-
-document.addEventListener('DOMContentLoaded', setupBackToTopButton);
