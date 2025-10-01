@@ -1,0 +1,630 @@
+/* --- 全局变量和重置 --- */
+:root {
+    --primary-color: #004795;    /* Coway Brand Blue */
+    --secondary-color: #00336a;  /* Darker blue for hover */
+    --light-blue-bg: #eaf2f9;    /* Coway Light Blue Background */
+    --light-color: #f7f7f7;      /* Light grey background */
+    --dark-color: #212529;       /* Dark color for headings */
+    --text-color: #555;          /* Main body text */
+    --font-family: 'Noto Sans SC', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+h1, h2, h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-section {
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.bg-light {
+    background-color: var(--light-color);
+}
+
+/* --- 导航栏 --- */
+.main-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1100; /* 提高导航栏层级，确保它在所有内容之上 */
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 70px;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    /* Text properties are no longer needed */
+    /* font-weight: 700; */
+    /* color: var(--primary-color); */
+}
+
+.nav-logo img {
+    height: 25px; /* 设置Logo的高度，可以根据您的图片调整 */
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-link {
+    font-family: 'Poppins', var(--font-family); /* 使用新字体，并保留旧字体作为备用 */
+    color: var(--text-color);
+    font-weight: 400;    
+    letter-spacing: 0.5px; /* 增加一点字间距，提升现代感 */
+    position: relative; /* 为下划线伪元素定位 */
+    padding-bottom: 5px; /* 为下划线留出空间 */
+    transition: color 0.3s ease, font-weight 0.3s ease; /* 添加字体粗细的过渡效果 */
+}
+
+/* 添加下划线效果 */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    font-weight: 700; /* 悬停时加粗字体 */
+}
+
+/* 筛选链接激活状态 */
+.nav-link.active-filter {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--dark-color);
+    transition: all 0.3s ease-in-out;
+}
+
+/* --- 促销横幅 --- */
+.promo-banner {
+    width: 100%;
+    background-color: #242424; /* 图片加载前的占位背景色 */
+    line-height: 0; /* 移除图片下方的空隙 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中 */
+}
+
+/* --- 视频容器 --- */
+.video-container {
+    width: 100%;
+    background-color: #000; /* 视频加载时的黑色背景 */
+}
+
+/* --- 深色背景文本区域 --- */
+.dark-section {
+    background-color: #0F0F10; /* 深灰色背景 */
+    color: #ffffff; /* 默认文字颜色为白色 */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+/* --- 主视觉区 --- */
+.hero-section {
+    height: 40vh; /* 从 40vh 缩小到 30vh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #68c1e4d8;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: var(--dark-color);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.product-detail-info .btn-primary {
+    margin-top: 2rem; /* 为按钮添加上边距 */
+}
+
+
+/* 为产品卡片中的按钮添加一个次要样式 */
+.btn-secondary {
+    background-color: #fff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    margin-top: 1rem; /* 与上方文字的间距 */
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+
+/* --- 产品区 --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.product-card {
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* 用于隐藏不匹配的产品 */
+.product-card.hide {
+    display: none;
+}
+
+.product-card img {
+    margin: 0 auto; /* 确保图片在卡片内水平居中 */
+    margin-bottom: 15px;
+}
+
+/* --- 功能区 --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.feature-item i {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* --- 关于我们 --- */
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* --- 联系我们表单 --- */
+.contact-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: -20px auto 40px;
+    line-height: 1.7;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(0, 71, 149, 0.2);
+}
+
+.form-submit-btn {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+/* --- 页脚 --- */
+.main-footer {
+    background-color: var(--dark-color);
+    color: var(#8f99a8c7);
+    text-align: center;
+    padding: 2px px; /* 减小上下内边距 */
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- 返回顶部按钮 --- */
+.back-to-top {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 80px; /* 放置在 WhatsApp 按钮上方 */
+    right: 17px;
+    background-color: transparent; /* 移除背景色，以免与图片冲突 */
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* 默认隐藏 */
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+.back-to-top img {
+    width: 100%;  /* 让图片宽度充满容器 */
+    height: 100%; /* 让图片高度充满容器 */
+    object-fit: cover; /* 确保图片不变形 */
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background-color: transparent; /* 悬停时也保持背景透明 */
+    transform: scale(1.1);
+}
+
+/* --- WhatsApp 悬浮按钮 --- */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 12px; /* 调整与底部的距离 */
+    right: 12px;  /* 调整与右侧的距离 */
+    background-color: #25D366; /* WhatsApp Green */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 100%;  /* 让图片宽度充满容器 */
+    height: 100%; /* 让图片高度充满容器 */
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.3);
+}
+
+/* --- 产品详情页样式 --- */
+.product-detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: flex-start;
+    position: relative; /* 创建新的层叠上下文 */
+    z-index: 1;         /* 确保其层级低于导航菜单 */
+}
+
+.product-detail-info {
+    /* 为信息区域创建新的层叠上下文，确保它不会覆盖导航菜单 */
+    position: relative;
+    z-index: 0;
+}
+
+.product-detail-image img {
+    border-radius: 8px;
+    border: 1px solid #eee;
+    justify-self: anchor-center;
+}
+
+.product-title {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.product-specs {
+    margin-bottom: 2rem;
+}
+
+.product-specs h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-specs table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-specs td {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.product-specs td:first-child {
+    font-weight: 700;
+    color: var(--dark-color);
+    width: 40%;
+}
+
+/* --- 产品价格区域 --- */
+.product-price {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--light-blue-bg);
+    border-radius: 8px;
+    border: 1px solid #d1e3f3;
+}
+
+.product-price h2 {
+    font-size: 1.4rem; /* 调小标题字体 */
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d1e3f3;
+    padding-bottom: 0.5rem;
+}
+
+.price-option {
+    /* 移除单独的下边距，由网格的 gap 控制 */
+    margin-bottom: 0; 
+}
+
+.price-option p, .price-option span {
+    font-size: 0.9rem; /* 调小描述文字体 */
+}
+
+.price-option h3 {
+    font-size: 1.1rem; /* 稍微增大价格字体 */
+    font-weight: 700; /* 调小价格字体 */
+    color: var(--primary-color);
+    margin-bottom: -3px;
+}
+
+.price-options-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem; /* 增加一些间距 */
+    padding-bottom: 1rem; /* 增加底部内边距 */
+    border-bottom: 1px solid #d1e3f3; /* 添加分割线 */
+    margin-bottom: 1rem; /* 与下一部分的间距 */
+}
+
+.price-options-grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem; /* 增加一些间距 */
+}
+
+/* 买断价格区域的容器 */
+.price-outright-section {
+    padding-bottom: 1.5rem; /* 为分割线下方留出空间 */
+    border-bottom: 1px solid #d1e3f3; /* 添加分割线 */
+    margin-bottom: 1.5rem; /* 与租赁部分的间距 */
+}
+
+/* 用于并排显示价格方案的网格 */
+.price-layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 39px;
+}
+
+@media (max-width: 768px) {
+    .price-options-grid-outright {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+
+/* --- 响应式设计 (移动端) --- */
+@media (max-width: 768px) {
+    html {
+        font-size: 95%; /* 在小屏幕上稍微减小基础字体大小 */
+    }
+
+    .section-title {
+        font-size: 2rem; /* 减小章节标题字体 */
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem; /* 减小主视觉区标题字体 */
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .product-title {
+        font-size: 2rem; /* 减小产品详情页标题字体 */
+    }
+
+    .product-description {
+        font-size: 1rem;
+    }
+
+    /* 将三列价格布局改为单列，提高可读性 */
+    .price-options-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 在移动端，将价格方案改为单列显示 */
+    .price-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-detail-container {
+        grid-template-columns: 1fr; /* 在小屏幕上改为单列布局 */
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 1099; /* 提高菜单层级，确保它在几乎所有内容之上，仅次于 header */
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1rem 0; /* 减小移动端导航项的垂直间距，使其更紧凑 */
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}

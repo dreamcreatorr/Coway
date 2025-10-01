@@ -1,0 +1,34 @@
+.product-grid {
+    /* 增加列数，让每张卡片占据更少空间 */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.product-card {
+    /* 您可以根据需要调整这里的最大宽度值 */
+    max-width: 280px;
+}
+
+.product-card {
+    padding: 15px; /* 从 20px 减少内边距 */
+}
+
+.product-card h3 {
+    font-size: 1.1rem; /* 调整标题字体大小 */
+    margin-bottom: 0.5rem; /* 减少与下方描述的间距 */
+}
+
+.product-card p {
+    font-size: 1.1rem; /* 调整描述文字大小 */
+    line-height: 1.4; /* 调整行高 */
+    margin-bottom: 0.75rem; /* 减少与下方按钮的间距 */
+}
+
+.product-card .btn-secondary {
+    padding: 8px 16px; /* 调小按钮的内边距 */
+    font-size: 0.9rem; /* 调小按钮的字体大小 */
+}
+
+    .price-options-grid-outright {
+        grid-template-columns: 1fr;
+        gap: 1.5rem; /* 在移动端增加一些垂直间距 */
+    }
