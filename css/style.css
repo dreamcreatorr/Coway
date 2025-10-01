@@ -511,7 +511,7 @@ img {
 
 .price-options-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr; /* 修改为单列垂直显示 */
     gap: 0.5rem; /* 增加一些间距 */
     padding-bottom: 1rem; /* 增加底部内边距 */
     border-bottom: 1px solid #d1e3f3; /* 添加分割线 */
@@ -546,6 +546,23 @@ img {
     }
 }
 
+/* Dazzie 产品页的租赁价格网格布局 */
+.price-section-grid-dazzie {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 默认在桌面端显示为两列 */
+    gap: 1.5rem; /* 设置列之间的间距 */
+}
+
+.price-column .service-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.price-column .service-subtitle {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
 
 /* --- 响应式设计 (移动端) --- */
 @media (max-width: 768px) {
@@ -573,9 +590,14 @@ img {
         font-size: 1rem;
     }
 
-    /* 将三列价格布局改为单列，提高可读性 */
+    /* 在移动端，将租赁价格布局改为双列，与买断部分保持一致 */
     .price-options-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* 在移动端也确保为单列显示 */
+    }
+
+    /* 在移动端，将 Dazzie 的租赁服务并排显示 */
+    .price-section-grid-dazzie {
+        grid-template-columns: 1fr 1fr;
     }
 
     /* 在移动端，将价格方案改为单列显示 */

@@ -14,6 +14,15 @@
     <script src="js/main.js" defer></script>
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="css/custom.css">
+    <style>
+        /* 在移动端视图下，每行显示两个产品卡片 */
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem; /* 调整卡片之间的间距 */
+            }
+        }
+    </style>
 </head>
 
 <body>
