@@ -628,3 +628,29 @@ img {
         font-size: 2.5rem;
     }
 }
+
+/* --- 产品价格区域 (重构后) --- */
+.product-price {
+    margin-top: 2rem;
+}
+
+/* 租赁和买断价格区域的通用样式 */
+.price-rental-section,
+.price-outright-section {
+    margin-bottom: 1.5rem; /* 区域之间的间距 */
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #d1e3f3;
+}
+
+
+.price-option p, .price-option span {
+    font-size: 0.9rem;
+}
+
+.price-option h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: -3px;
+}
