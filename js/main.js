@@ -26,25 +26,103 @@ async function loadLayout() {
 
 // --- 初始化头部相关脚本的函数 ---
 function initializeHeaderScripts() {
+    // --- 高亮当前页面的导航链接 ---
+    const currentPageFile = window.location.pathname.split('/').pop() || 'index.html';
+    
+    if (currentPageFile === 'index.html') {
+        // 如果是首页，只高亮“首页”链接
+        const homeLink = document.querySelector('.nav-menu a.nav-link[href="index.html"]');
+        if (homeLink) {
+            homeLink.classList.add('active-page');
+        }
+    } else {
+        // 如果是其他页面（产品详情页等），执行产品页的高亮逻辑
+        // 查找所有导航链接（包括主导航和下拉菜单）
+        const navLinks = document.querySelectorAll('.nav-link, .dropdown-item');
+        navLinks.forEach(link => {
+            const linkHref = link.getAttribute('href');
+            const linkFile = linkHref.split('/').pop().split('?')[0].split('#')[0] || 'index.html';
+
+            // 检查文件名是否匹配
+            if (linkFile === currentPageFile) {
+                link.classList.add('active-page'); // 添加高亮类
+
+                // 如果是下拉菜单中的项，也高亮其父级导航项
+                const parentDropdown = link.closest('.dropdown');
+                if (parentDropdown) {
+                    const parentNavLink = parentDropdown.querySelector('.nav-link');
+                    if (parentNavLink) {
+                        parentNavLink.classList.add('active-page');
+                    }
+                }
+            }
+        });
+    }
+
     // --- 移动端汉堡菜单逻辑 ---
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
-    const navLinks = document.querySelectorAll(".nav-link");
+    const menuLinks = document.querySelectorAll(".nav-menu .nav-link"); // 重命名变量以避免冲突
+
+    // 禁用导航菜单的拼写检查，以移除浏览器添加的红色下划线
+    if (navMenu) navMenu.setAttribute('spellcheck', 'false');
 
     function toggleMenu() {
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
     }
 
+    // 关闭整个菜单的函数
     function closeMenu() {
-        if (hamburger && hamburger.classList.contains("active")) {
+        if (navMenu && navMenu.classList.contains("active")) {
             hamburger.classList.remove("active");
             navMenu.classList.remove("active");
         }
     }
 
+    // 移动端菜单链接点击事件处理
+    function handleMenuLinkClick(event) {
+        const clickedLink = event.currentTarget;
+        const parentItem = clickedLink.parentElement;
+
+        // 检查被点击的链接是否是用于展开下拉菜单的
+        const isDropdownToggle = parentItem.classList.contains('dropdown');
+
+        if (isDropdownToggle) {
+            event.preventDefault(); // 阻止链接的默认跳转行为
+
+            // 手风琴效果：在展开当前菜单前，关闭其他所有已展开的菜单
+            const allDropdowns = navMenu.querySelectorAll('.dropdown');
+            allDropdowns.forEach(dropdown => {
+                if (dropdown !== parentItem) {
+                    dropdown.classList.remove('open');
+                }
+            });
+
+            // 切换当前点击菜单的展开/收起状态
+            parentItem.classList.toggle('open');
+        } else {
+            // 如果是普通链接（非下拉菜单触发器），则关闭整个导航
+            closeMenu();
+        }
+    }
+
     if (hamburger) hamburger.addEventListener("click", toggleMenu);
-    if (navLinks) navLinks.forEach(link => link.addEventListener("click", closeMenu));
+    if (menuLinks) menuLinks.forEach(link => link.addEventListener("click", handleMenuLinkClick));
+
+    // --- 点击菜单外部区域关闭菜单 ---
+    document.addEventListener('click', function(event) {
+        // 确保菜单和汉堡按钮已加载
+        if (!navMenu || !hamburger) return;
+
+        // 检查菜单是否为激活状态，并且点击的目标不是菜单本身或汉堡按钮
+        const isClickInsideMenu = navMenu.contains(event.target);
+        const isClickOnHamburger = hamburger.contains(event.target);
+
+        if (navMenu.classList.contains('active') && !isClickInsideMenu && !isClickOnHamburger) {
+            closeMenu();
+        }
+    });
 
     // --- 产品筛选逻辑 ---
     const filterLinks = document.querySelectorAll(".filter-link");

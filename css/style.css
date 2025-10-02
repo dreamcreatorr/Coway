@@ -2,7 +2,7 @@
 :root {
     --primary-color: #004795;    /* Coway Brand Blue */
     --secondary-color: #00336a;  /* Darker blue for hover */
-    --light-blue-bg: #eaf2f9;    /* Coway Light Blue Background */
+    --light-blue-bg: #cadceb;    /* Coway Light Blue Background */
     --light-color: #f7f7f7;      /* Light grey background */
     --dark-color: #212529;       /* Dark color for headings */
     --text-color: #555;          /* Main body text */
@@ -96,6 +96,11 @@ img {
     gap: 25px;
 }
 
+.nav-item {
+    /* 为下拉菜单定位提供参考 */
+    position: relative;
+}
+
 .nav-link {
     font-family: 'Poppins', var(--font-family); /* 使用新字体，并保留旧字体作为备用 */
     color: var(--text-color);
@@ -104,6 +109,10 @@ img {
     position: relative; /* 为下划线伪元素定位 */
     padding-bottom: 5px; /* 为下划线留出空间 */
     transition: color 0.3s ease, font-weight 0.3s ease; /* 添加字体粗细的过渡效果 */
+}
+
+.nav-link i.fa-angle-down {
+    margin-left: 4px;
 }
 
 /* 添加下划线效果 */
@@ -131,6 +140,61 @@ img {
     font-weight: 700;
 }
 
+/* 当前页面在导航中的高亮状态 (无下划线) */
+.nav-link.active-page {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* --- 下拉菜单样式 --- */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e5ecf0;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    z-index: 1101; /* 确保在导航栏之上 */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-blue-bg);
+    color: var(--primary-color);
+}
+
+/* 当前页面在下拉菜单中的高亮状态 */
+.dropdown-item.active-page {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-divider {
+    height: 1px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    background-color: #e9ecef;
+}
 .hamburger {
     display: none;
     cursor: pointer;
@@ -628,12 +692,13 @@ img {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
-    .nav-menu.active {
-        left: 0;
-    }
-
     .nav-item {
         margin: 1rem 0; /* 减小移动端导航项的垂直间距，使其更紧凑 */
+    }
+
+    /* --- 移动端菜单激活状态 --- */
+    .nav-menu.active {
+        left: 0;
     }
 
     .hamburger {
@@ -650,6 +715,36 @@ img {
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* --- 移动端下拉菜单样式优化 --- */
+    .nav-menu .dropdown-menu {
+        /* 重置桌面端样式 */
+        position: static;
+        transform: none;
+        box-shadow: none;
+        border-radius: 0;
+        opacity: 1;
+        visibility: visible;
+        
+        /* 动画效果 */
+        background-color: #d1e3f3;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 0 0 30px;
+        transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    }
+
+    /* 移动端下拉菜单展开状态 */
+    .nav-menu .dropdown.open .dropdown-menu {
+        max-height: 500px; /* 设定一个足够大的高度以容纳所有子项 */
+        padding: 0;
+    }
+
+    /* 移动端下拉菜单项的交互效果 */
+    .nav-menu .dropdown-menu .dropdown-item:hover {
+        background-color: #bbd7f0; /* 悬停时使用更深的颜色 */
+        color: var(--primary-color);
     }
 
     .hero-content h1 {
