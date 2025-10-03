@@ -2,7 +2,7 @@
 :root {
     --primary-color: #004795;    /* Coway Brand Blue */
     --secondary-color: #00336a;  /* Darker blue for hover */
-    --light-blue-bg: #cadceb;    /* Coway Light Blue Background */
+    --light-blue-bg: #edf1f5;    /* Coway Light Blue Background */
     --light-color: #f7f7f7;      /* Light grey background */
     --dark-color: #212529;       /* Dark color for headings */
     --text-color: #555;          /* Main body text */
@@ -198,6 +198,9 @@ img {
 .hamburger {
     display: none;
     cursor: pointer;
+    /* 优化：移除按钮的默认边框和背景，使其更干净 */
+    border: none;
+    background-color: transparent;
 }
 
 .bar {
@@ -396,9 +399,9 @@ img {
 /* --- 页脚 --- */
 .main-footer {
     background-color: var(--dark-color);
-    color: var(#8f99a8c7);
+    color: #a9b1bb; /* 使用一个更清晰的灰色调 */
     text-align: center;
-    padding: 2px px; /* 减小上下内边距 */
+    padding: 20px; /* 修正了无效的 padding 值，并提供合理的内边距 */
 }
 
 .social-links {
@@ -750,30 +753,4 @@ img {
     .hero-content h1 {
         font-size: 2.5rem;
     }
-}
-
-/* --- 产品价格区域 (重构后) --- */
-.product-price {
-    margin-top: 2rem;
-}
-
-/* 租赁和买断价格区域的通用样式 */
-.price-rental-section,
-.price-outright-section {
-    margin-bottom: 1.5rem; /* 区域之间的间距 */
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #d1e3f3;
-}
-
-
-.price-option p, .price-option span {
-    font-size: 0.9rem;
-}
-
-.price-option h3 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: -3px;
 }

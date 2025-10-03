@@ -1,0 +1,58 @@
+{
+    "massage-chair": {
+        "category": "massage",
+        "name": "Coway Massage Chair",
+        "titleTag": "Coway Massage Chair - 按摩椅",
+        "metaDescription": "探索 Coway 按摩椅，为您带来顶级的家庭按摩享受，彻底放松身心。",
+        "image": "https://via.placeholder.com/600x600.png?text=Massage+Chair",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway 按摩椅是您家中的私人按摩师。它集成了多种先进的按摩技术，如3D机芯、零重力模式和全身气囊包裹，为您提供从头到脚的全面放松，让您在家中即可享受奢华的按摩体验。",
+        "specs": {
+            "型号": "MC-ST01B",
+            "颜色": "Blue",
+            "电压": "220 - 240 V",
+            "功耗": "180 W",
+            "尺寸 (W x D x H)": "740 x 1460 x 1160 mm",
+            "净重": "84.0 kg",
+            "特点": "3D智能机芯, 零重力模式, 全身气囊, 热疗功能"
+        },
+        "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>租赁 (Monthly Rental)</p></div><div class=\"price-options-grid\"><div class=\"price-option text-center\"><p>5年合约</p><h3>RM 145 <small>/ 月</small></h3></div></div></div><div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>买断 (Outright)</p></div><div class=\"price-options-grid-2-col\"><div class=\"price-option text-center\"><h3>RM 5,990</h3><span>包含1年免费服务</span></div></div></div>"
+    },
+    "massage-bed": {
+        "category": "massage",
+        "name": "Coway Massage Bed",
+        "titleTag": "Coway Massage Bed - 按摩床",
+        "metaDescription": "探索 Coway 按摩床，为您提供极致放松的按摩体验，缓解日常疲劳。",
+        "image": "https://via.placeholder.com/600x600.png?text=Massage+Bed",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway 按摩床结合了先进的按摩技术和人体工程学设计，提供全身心的放松。多种按摩模式，帮助您舒缓肌肉紧张，促进血液循环，享受专业级的理疗体验。",
+        "specs": {
+            "型号": "MB-S01",
+            "尺寸": "待定",
+            "特点": "全身按摩, 热疗功能, 多种模式"
+        },
+        "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>租赁 (Monthly Rental)</p></div><div class=\"price-options-grid\"><div class=\"price-option text-center\"><p>5年合约</p><h3>RM 159 <small>/ 月</small></h3></div></div></div><div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>买断 (Outright)</p></div><div class=\"price-options-grid-2-col\"><div class=\"price-option text-center\"><h3>RM 6,900</h3><span>包含1年免费服务</span></div></div></div>"
+    },
+    "pebble": {
+        "category": "massage",
+        "name": "Coway Pebble",
+        "titleTag": "Coway Pebble - 按摩器",
+        "metaDescription": "探索 Coway Pebble，一款小巧便携的按摩器，随时随地为您提供舒适的按摩。",
+        "image": "https://via.placeholder.com/600x600.png?text=Pebble",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Pebble 是一款设计独特的便携式按摩器。其圆润的外形和轻巧的设计，让您可以轻松携带，随时随地享受针对性的按摩，有效缓解局部肌肉酸痛。",
+        "specs": { "型号": "HS-03", "特点": "便携设计, 多种振动模式, USB充电" },
+        "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>买断 (Outright)</p></div><div class=\"price-options-grid-2-col\"><div class=\"price-option text-center\"><h3>RM 450</h3></div></div></div>"
+    },
+    "mine": {
+        "category": "massage",
+        "name": "Coway Mine",
+        "titleTag": "Coway Mine - 按摩器",
+        "metaDescription": "探索 Coway Mine，一款为您量身定制的个人按摩器。",
+        "image": "https://via.placeholder.com/600x600.png?text=Mine",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Mine 是一款专为个人设计的按摩设备，提供个性化的按摩体验。它小巧而强大，能够满足您对舒适和放松的独特需求。",
+        "specs": { "型号": "HS-02", "特点": "个性化设置, 小巧强大, 人体工学设计" },
+        "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>买断 (Outright)</p></div><div class=\"price-options-grid-2-col\"><div class=\"price-option text-center\"><h3>RM 330</h3></div></div></div>"
+    }
+}
