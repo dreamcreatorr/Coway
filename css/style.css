@@ -513,6 +513,66 @@ img {
     justify-self: anchor-center;
 }
 
+/* --- 产品图片画廊容器 --- */
+.image-gallery-wrapper {
+    position: relative;
+}
+
+.gallery-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    transition: background-color 0.3s, transform 0.3s;
+    color: var(--dark-color);
+}
+
+.gallery-nav-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* --- 产品图片画廊 (静态页面测试用) --- */
+.image-gallery-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; /* 强制滚动到图片边缘 */
+    -webkit-overflow-scrolling: touch; /* 在iOS上启用平滑滚动 */
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+.image-gallery-scroll-container img {
+    flex: 0 0 100%; /* 每张图片占据容器的100%宽度 */
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start; /* 将图片的起始边缘与容器对齐 */
+    object-fit: cover;
+}
+
+/* 隐藏滚动条 */
+.image-gallery-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
 .product-title {
     font-size: 2.8rem;
     margin-bottom: 1.5rem;
@@ -696,7 +756,7 @@ img {
     }
 
     .nav-item {
-        margin: 1rem 0; /* 减小移动端导航项的垂直间距，使其更紧凑 */
+        margin: 0.6rem 0; /* 再次减小移动端导航项的垂直间距，使其更紧凑 */
     }
 
     /* --- 移动端菜单激活状态 --- */
@@ -740,8 +800,26 @@ img {
 
     /* 移动端下拉菜单展开状态 */
     .nav-menu .dropdown.open .dropdown-menu {
-        max-height: 500px; /* 设定一个足够大的高度以容纳所有子项 */
+        max-height: 100%; /* 设定一个足够大的高度以容纳所有子项 */
         padding: 0;
+    }
+
+    /* 减小移动端下拉菜单项的垂直间距 */
+    .nav-menu .dropdown-menu .dropdown-item {
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+    }
+
+    /* 仅针对移动端的 "Water Purifier" 下拉菜单，使其变为两列网格布局 */
+    .nav-link[data-category="water"] + .dropdown-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 创建两列 */
+        gap: 0 10px; /* 在列之间添加间距 */
+    }
+
+    /* 在网格布局中，分隔线需要跨越两列 */
+    .nav-link[data-category="water"] + .dropdown-menu .dropdown-divider {
+        grid-column: 1 / -1;
     }
 
     /* 移动端下拉菜单项的交互效果 */

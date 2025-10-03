@@ -1,7 +1,7 @@
 {
     "massage-chair": {
         "category": "massage",
-        "name": "Coway Massage Chair",
+        "name": "Massage Chair",
         "titleTag": "Coway Massage Chair - 按摩椅",
         "metaDescription": "探索 Coway 按摩椅，为您带来顶级的家庭按摩享受，彻底放松身心。",
         "image": "https://via.placeholder.com/600x600.png?text=Massage+Chair",
@@ -20,7 +20,7 @@
     },
     "massage-bed": {
         "category": "massage",
-        "name": "Coway Massage Bed",
+        "name": "Massage Bed",
         "titleTag": "Coway Massage Bed - 按摩床",
         "metaDescription": "探索 Coway 按摩床，为您提供极致放松的按摩体验，缓解日常疲劳。",
         "image": "https://via.placeholder.com/600x600.png?text=Massage+Bed",
@@ -35,7 +35,7 @@
     },
     "pebble": {
         "category": "massage",
-        "name": "Coway Pebble",
+        "name": "Pebble",
         "titleTag": "Coway Pebble - 按摩器",
         "metaDescription": "探索 Coway Pebble，一款小巧便携的按摩器，随时随地为您提供舒适的按摩。",
         "image": "https://via.placeholder.com/600x600.png?text=Pebble",
@@ -46,7 +46,7 @@
     },
     "mine": {
         "category": "massage",
-        "name": "Coway Mine",
+        "name": "Mine",
         "titleTag": "Coway Mine - 按摩器",
         "metaDescription": "探索 Coway Mine，一款为您量身定制的个人按摩器。",
         "image": "https://via.placeholder.com/600x600.png?text=Mine",
@@ -54,5 +54,186 @@
         "description": "Coway Mine 是一款专为个人设计的按摩设备，提供个性化的按摩体验。它小巧而强大，能够满足您对舒适和放松的独特需求。",
         "specs": { "型号": "HS-02", "特点": "个性化设置, 小巧强大, 人体工学设计" },
         "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>买断 (Outright)</p></div><div class=\"price-options-grid-2-col\"><div class=\"price-option text-center\"><h3>RM 330</h3></div></div></div>"
+    }
+    ,
+    "mattress-smart": {
+        "category": "mattress",
+        "name": "Smart Mattress",
+        "titleTag": "Coway Smart Mattress - 智能床垫",
+        "metaDescription": "探索 Coway Smart Mattress，一款能够适应您身体的智能床垫，提供前所未有的睡眠体验。",
+        "image": "https://via.placeholder.com/600x600.png?text=Smart+Mattress",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway 智能床垫，采用最新科技，能够感知并适应您的睡姿，提供动态支撑。通过智能调节，确保您每晚都能获得最舒适的深度睡眠。",
+        "specs": {
+            "型号": "待定",
+            "尺寸": "King / Queen",
+            "材质": "智能感应层, 记忆棉, 独立袋装弹簧",
+            "特点": "智能调节, 睡眠追踪, 分区支撑"
+        },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    },
+    "mattress-prime-lite": {
+        "category": "mattress",
+        "name": "Prime Lite",
+        "titleTag": "Coway Prime Lite - 轻奢床垫",
+        "metaDescription": "探索 Coway Prime Lite，一款结合了舒适与支撑的轻奢床垫，为您带来优质睡眠。",
+        "image": "https://via.placeholder.com/600x600.png?text=Prime+Lite",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Prime Lite 床垫，精选优质材料，提供恰到好处的支撑与柔软度。让您在每个夜晚都能享受到如云端般的舒适睡眠，焕发活力。",
+        "specs": {
+            "型号": "待定",
+            "尺寸": "King / Queen / Super Single",
+            "材质": "高弹海绵, 独立袋装弹簧",
+            "特点": "轻奢设计, 均衡支撑, 透气面料"
+        },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    },
+    "mattress-eco-lite": {
+        "category": "mattress",
+        "name": "Eco Lite Mattress",
+        "titleTag": "Coway Eco-Lite - 环保舒适床垫",
+        "metaDescription": "Coway Eco-Lite 采用环保材料，100%天然乳胶，健康舒适。月租 RM109 起。",
+        "image": "images/coway-mattress-eco-lite.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Eco-Lite 是一款注重环保和健康的床垫。它采用100%天然乳胶和有机棉面料，不含有害化学物质，为您提供一个安全、舒适且透气的睡眠环境。是追求自然生活方式人士的理想选择。",
+        "specs": { "特点": "环保材料, 防过敏, 高透气性" },
+        "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>租赁 (Monthly Rental)</p></div><div class=\"price-options-grid\"><div class=\"price-option text-center\"><p>5年合约</p><h3>RM 109 <small>/ 月</small></h3></div></div></div>"
+    },
+    "mattress-prime2": {
+        "category": "mattress",
+        "name": "Prime II Mattress",
+        "titleTag": "Coway Prime II - 智能调节床垫",
+        "metaDescription": "Coway Prime II 是一款革命性的智能床垫，允许您根据个人喜好调节床垫的软硬度。月租 RM189 起。",
+        "image": "images/coway-mattress-prime2.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Prime II 是一款革命性的智能床垫，允许您根据个人喜好调节床垫的软硬度。它采用高品质记忆棉和独立袋装弹簧，结合智能调节技术，为您和您的伴侣提供量身定制的完美睡眠支撑。",
+        "specs": { "特点": "软硬度可调, 零干扰设计, 7区支撑" },
+        "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>租赁 (Monthly Rental)</p></div><div class=\"price-options-grid\"><div class=\"price-option text-center\"><p>5年合约</p><h3>RM 189 <small>/ 月</small></h3></div></div></div>"
+    },
+    "mattress-prime": {
+        "category": "mattress",
+        "name": "Prime",
+        "titleTag": "Coway Prime - 经典床垫",
+        "metaDescription": "探索 Coway Prime，一款经典的床垫，提供持久的舒适和支撑。",
+        "image": "https://via.placeholder.com/600x600.png?text=Prime",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Prime 床垫是经典与舒适的完美结合。采用高品质独立袋装弹簧，为您的身体提供稳定而均匀的支撑，确保您每晚都能安然入睡。",
+        "specs": { "特点": "经典设计, 持久耐用, 卓越支撑" },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    }
+,
+    "bathroom-flowlet-plus": {
+        "category": "bathroom",
+        "name": "Flowlet Plus",
+        "titleTag": "Coway Flowlet Plus - 智能坐浴盆",
+        "metaDescription": "探索 Coway Flowlet Plus，一款提供极致清洁和舒适体验的智能坐浴盆。",
+        "image": "https://via.placeholder.com/600x600.png?text=Flowlet+Plus",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Flowlet Plus 智能坐浴盆，结合了先进的清洁技术和人性化设计，为您带来前所未有的卫生和舒适体验。",
+        "specs": { "特点": "温水清洗, 暖风烘干, 智能除臭" },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    },
+    "bathroom-flowlet": {
+        "category": "bathroom",
+        "name": "Flowlet",
+        "titleTag": "Coway Flowlet - 电子坐浴盆",
+        "metaDescription": "探索 Coway Flowlet，一款提供舒适清洁体验的电子坐浴盆。",
+        "image": "https://via.placeholder.com/600x600.png?text=Flowlet",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Flowlet 电子坐浴盆，提供舒适的温水清洗功能，是提升卫浴体验的理想选择。",
+        "specs": { "特点": "温水清洗, 喷头自洁, 简易安装" },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    },
+    "bathroom-bateri-bidet": {
+        "category": "bathroom",
+        "name": "Bateri Bidet",
+        "titleTag": "Coway Bateri Bidet - 电池驱动坐浴盆",
+        "metaDescription": "探索 Coway Bateri Bidet，无需外接电源，安装简便，轻松享受洁净。",
+        "image": "https://via.placeholder.com/600x600.png?text=Bateri+Bidet",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Bateri Bidet 采用电池驱动，解决了卫生间无电源的烦恼。一键操作，简单方便，是升级家庭卫生的便捷方案。",
+        "specs": { "特点": "电池驱动, 无需插电, 简易安装" },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    },
+    "bathroom-fontana": {
+        "category": "bathroom",
+        "name": "Fontana",
+        "titleTag": "Coway Fontana - 淋浴净化器",
+        "metaDescription": "探索 Coway Fontana，一款能有效过滤自来水中余氯和杂质的淋浴净化器。",
+        "image": "https://via.placeholder.com/600x600.png?text=Fontana",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Fontana 淋浴净化器，有效去除水中的余氯、铁锈和杂质，保护您的皮肤和头发免受化学物质的伤害，让每一次淋浴都成为一次纯净的享受。",
+        "specs": { "特点": "过滤余氯, 去除杂质, 保护肌肤" },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    },
+    "bathroom-manual-bidet": {
+        "category": "bathroom",
+        "name": "Manual Bidet",
+        "titleTag": "Coway Manual Bidet - 手动坐浴盆",
+        "metaDescription": "探索 Coway Manual Bidet，一款无需用电、经济实惠的坐浴盆。",
+        "image": "https://via.placeholder.com/600x600.png?text=Manual+Bidet",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway Manual Bidet 手动坐浴盆，无需电力，通过水压驱动，提供基础而有效的清洁功能，是经济环保的卫浴升级选择。",
+        "specs": { "特点": "无需用电, 水压驱动, 经济实惠" },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    }
+,
+    "ac-p-series": {
+        "category": "air-conditioner",
+        "name": "P-Series Air Conditioner",
+        "titleTag": "Coway P-Series - 智能变频空调",
+        "metaDescription": "探索 Coway P-Series 智能变频空调，提供高效制冷和空气净化功能。",
+        "image": "https://via.placeholder.com/600x600.png?text=P-Series+AC",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway P-Series 智能变频空调，采用先进的变频技术，实现快速制冷和节能运行。内置空气净化功能，有效去除空气中的灰尘和过敏原，为您带来凉爽洁净的室内环境。",
+        "specs": {
+            "型号": "P-Series",
+            "特点": "智能变频, 高效节能, 空气净化"
+        },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    },
+    "ac-f-series": {
+        "category": "air-conditioner",
+        "name": "F-Series Air Conditioner",
+        "titleTag": "Coway F-Series - 时尚壁挂式空调",
+        "metaDescription": "探索 Coway F-Series 时尚壁挂式空调，设计优雅，性能卓越。",
+        "image": "https://via.placeholder.com/600x600.png?text=F-Series+AC",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway F-Series 时尚壁挂式空调，将卓越性能与优雅设计完美结合。它不仅能提供强劲的制冷效果，其简约现代的外观也能融入任何家居风格，提升您的生活品质。",
+        "specs": {
+            "型号": "F-Series",
+            "特点": "时尚设计, 强劲制冷, 静音运行"
+        },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    }
+,
+    "outdoor-filter": {
+        "category": "outdoor",
+        "name": "Coway Outdoor Filter",
+        "titleTag": "Coway Outdoor Filter - 户外滤水器",
+        "metaDescription": "探索 Coway 户外滤水器，为您的整个家庭提供第一道防线，过滤自来水中的杂质。",
+        "image": "https://via.placeholder.com/600x600.png?text=Outdoor+Filter",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway 户外滤水器是您家庭用水的第一道屏障。它能有效过滤自来水中的泥沙、铁锈和其他沉淀物，为您家中的所有用水点提供更洁净的水源。",
+        "specs": {
+            "型号": "待定",
+            "特点": "全屋过滤, 高效去除沉淀物, 经久耐用"
+        },
+        "priceHTML": "<p>价格信息即将公布</p>"
+    }
+,
+    "laundry-washer-dryer": {
+        "category": "laundry",
+        "name": "Coway Washer Dryer",
+        "titleTag": "Coway Washer Dryer - 洗烘一体机",
+        "metaDescription": "探索 Coway 洗烘一体机，一机解决洗涤和烘干需求，让衣物护理更轻松。",
+        "image": "https://via.placeholder.com/600x600.png?text=Washer+Dryer",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "Coway 洗烘一体机，结合了高效洗涤和快速烘干功能。智能感应技术能自动匹配最佳洗烘程序，呵护您的衣物，节省时间和能源。",
+        "specs": {
+            "型号": "待定",
+            "特点": "洗烘一体, 智能感应, 高效节能"
+        },
+        "priceHTML": "<p>价格信息即将公布</p>"
     }
 }

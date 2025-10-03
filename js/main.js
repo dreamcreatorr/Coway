@@ -247,6 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProductDetails(); // 新增：加载产品详情页内容
     initializeContactForm();
     setupBackToTopButton(); // 设置“返回顶部”按钮
+    initializeImageGallery(); // 新增：初始化图片画廊
     setupWhatsAppButton(); // 新增：设置 WhatsApp 按钮
 });
 
@@ -371,6 +372,32 @@ function scrollToTop(duration) {
 
     requestAnimationFrame(animation);
 }
+
+// --- 图片画廊左右滚动按钮逻辑 ---
+function initializeImageGallery() {
+    const galleryWrapper = document.querySelector('.image-gallery-wrapper');
+    if (!galleryWrapper) return;
+
+    const scrollContainer = galleryWrapper.querySelector('.image-gallery-scroll-container');
+    const prevBtn = galleryWrapper.querySelector('.prev-btn');
+    const nextBtn = galleryWrapper.querySelector('.next-btn');
+
+    if (!scrollContainer || !prevBtn || !nextBtn) return;
+
+    const scrollAmount = () => {
+        // 每次滚动一张图片的宽度
+        return scrollContainer.querySelector('img').clientWidth;
+    };
+
+    nextBtn.addEventListener('click', () => {
+        scrollContainer.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+        scrollContainer.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+    });
+}
+
 
 // --- WhatsApp 悬浮按钮逻辑 ---
 function setupWhatsAppButton() {
