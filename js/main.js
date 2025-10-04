@@ -19,9 +19,9 @@ async function loadComponent(url, placeholderId, isHeader = false) {
 
 async function loadLayout() {
     // 标记正在加载的是头部
-    await loadComponent('/includes/header.html', 'header-placeholder', true); 
+    await loadComponent('includes/header.html', 'header-placeholder', true); 
     // 加载页脚
-    await loadComponent('/includes/footer.html', 'footer-placeholder', false);
+    await loadComponent('includes/footer.html', 'footer-placeholder', false);
 }
 
 // --- 初始化头部相关脚本的函数 ---
