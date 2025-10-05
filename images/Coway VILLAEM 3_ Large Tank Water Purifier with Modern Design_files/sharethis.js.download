@@ -290,8 +290,26 @@ Array.prototype.indexOf || (Array.prototype.indexOf = function(d, e) {
   };
 
   st.css = function(css) {
-    var head, s;
-    head = document.getElementsByTagName('head')[0];
+    var <head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->, s;
+    <head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags --> = document.getElementsByTagName('<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->')[0];
     s = document.createElement('style');
     s.setAttribute('type', 'text/css');
     if (s.styleSheet) {
@@ -299,7 +317,13 @@ Array.prototype.indexOf || (Array.prototype.indexOf = function(d, e) {
     } else {
       s.appendChild(document.createTextNode(css));
     }
-    return head.appendChild(s);
+    return <head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->.appendChild(s);
   };
 
   st.ecommerce = function() {
@@ -3923,14 +3947,32 @@ __stdos__.logger = {
   st = window.__sharethis__;
 
   st.loader['email-list-builder'] = function(config) {
-    var $backdrop, $button, $close, $el, $error, $input, $modal, behavior, button_label, color, common_css, container, css, fade_in, headline, hover_css, html, id, message, onClose, onScroll, onSubmit, property, ref, scroll_down, scroll_timeout, send, show, thanks;
+    var $backdrop, $button, $close, $el, $error, $input, $modal, behavior, button_label, color, common_css, container, css, fade_in, <head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->line, hover_css, html, id, message, onClose, onScroll, onSubmit, property, ref, scroll_down, scroll_timeout, send, show, thanks;
     if (config == null) {
       config = {};
     }
     if (!config.enabled) {
       return;
     }
-    color = config.color, button_label = config.button_label, headline = config.headline, message = config.message, property = config.property, thanks = config.thanks, scroll_down = config.scroll_down;
+    color = config.color, button_label = config.button_label, <head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->line = config.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->line, message = config.message, property = config.property, thanks = config.thanks, scroll_down = config.scroll_down;
     behavior = config.behavior, container = config.container, fade_in = config.fade_in, onClose = config.onClose, onSubmit = config.onSubmit;
     if (behavior !== 'show') {
       if (st.storage.get('st_email_list_builder_email_collected')) {
@@ -3949,8 +3991,20 @@ __stdos__.logger = {
     if (fade_in == null) {
       fade_in = true;
     }
-    if (headline == null) {
-      headline = 'SUBSCRIBE VIA EMAIL';
+    if (<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->line == null) {
+      <head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->line = 'SUBSCRIBE VIA EMAIL';
     }
     if (message == null) {
       message = 'Subscribe to out mailing list to get updates!';
@@ -3975,14 +4029,32 @@ __stdos__.logger = {
     if (fade_in) {
       st.addClass($el, 'st-hidden');
     }
-    common_css = "#" + id + " {\n  " + st.BORDER_BOX + "\n  " + (st.TRANSITION('opacity')) + "\n  bottom: 0;\n  display: block;\n  left: 0;\n  opacity: 1;\n  position: fixed;\n  right: 0;\n  text-align: center;\n  top: 0;\n  z-index: 9999;\n}\n#" + id + ".st-hidden {\n  opacity: 0;\n}\n#" + id + " .st-backdrop {\n  background: rgba(0, 0, 0, 0.8);\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  z-index: 10;\n}\n#" + id + " .st-modal {\n  " + (st.BORDER_RADIUS(6)) + "\n  " + st.BORDER_BOX + "\n  " + (st.TRANSITION('opacity')) + "\n  background: #fff;\n  border-top: 10px solid " + color + ";\n  bottom: 0;\n  color: #333;\n  margin: 100px auto 0;\n  max-width: 90%;\n  opacity: 1;\n  padding: 20px 40px;\n  position: relative;\n  width: 600px;\n  z-index: 20;\n}\n#" + id + " .st-modal.st-hidden {\n  opacity: 0;\n}\n#" + id + " .st-headline {\n  margin-bottom: 5px;\n  font-size: 32px;\n  line-height: 38px;\n}\n#" + id + " .st-message {\n  margin-bottom: 25px;\n  font-size: 18px;\n  line-height: 24px;\n}\n#" + id + " .st-error {\n  color: red;\n  font-size: 14px;\n  line-height: 26px;\n}\n#" + id + " input {\n  " + st.BORDER_BOX + "\n  " + (st.BORDER_RADIUS(4)) + "\n  background-color: #fff;\n  border: 1px solid #aeaeae;\n  color: #333;\n  display: block;\n  font-size: 15px;\n  height: 48px;\n  margin-bottom: 25px;\n  padding: 12px;\n  text-align: center;\n  width: 100%;\n}\n#" + id + " .st-btn {\n  " + st.BORDER_BOX + "\n  " + (st.BORDER_RADIUS(4)) + "\n  " + (st.TRANSITION()) + "\n  background-color: #fff;\n  border: 0;\n  background: " + color + ";\n  color: #fff;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 18px;\n  height: 48px;\n  line-height: 48px;\n  min-width: 120px;\n  padding: 0 20px;\n}\n#" + id + " .st-close {\n  " + (st.BOX_SHADOW('0 0 20px black')) + "\n  " + (st.BORDER_RADIUS(18)) + "\n  background: #555;\n  border: 3px solid white;\n  cursor: pointer;\n  font-size: 24px;\n  height: 36px;\n  padding-top: 1px;\n  position: absolute;\n  right: -15px;\n  top: -23px;\n  width: 36px;\n}";
+    common_css = "#" + id + " {\n  " + st.BORDER_BOX + "\n  " + (st.TRANSITION('opacity')) + "\n  bottom: 0;\n  display: block;\n  left: 0;\n  opacity: 1;\n  position: fixed;\n  right: 0;\n  text-align: center;\n  top: 0;\n  z-index: 9999;\n}\n#" + id + ".st-hidden {\n  opacity: 0;\n}\n#" + id + " .st-backdrop {\n  background: rgba(0, 0, 0, 0.8);\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  z-index: 10;\n}\n#" + id + " .st-modal {\n  " + (st.BORDER_RADIUS(6)) + "\n  " + st.BORDER_BOX + "\n  " + (st.TRANSITION('opacity')) + "\n  background: #fff;\n  border-top: 10px solid " + color + ";\n  bottom: 0;\n  color: #333;\n  margin: 100px auto 0;\n  max-width: 90%;\n  opacity: 1;\n  padding: 20px 40px;\n  position: relative;\n  width: 600px;\n  z-index: 20;\n}\n#" + id + " .st-modal.st-hidden {\n  opacity: 0;\n}\n#" + id + " .st-<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->line {\n  margin-bottom: 5px;\n  font-size: 32px;\n  line-height: 38px;\n}\n#" + id + " .st-message {\n  margin-bottom: 25px;\n  font-size: 18px;\n  line-height: 24px;\n}\n#" + id + " .st-error {\n  color: red;\n  font-size: 14px;\n  line-height: 26px;\n}\n#" + id + " input {\n  " + st.BORDER_BOX + "\n  " + (st.BORDER_RADIUS(4)) + "\n  background-color: #fff;\n  border: 1px solid #aeaeae;\n  color: #333;\n  display: block;\n  font-size: 15px;\n  height: 48px;\n  margin-bottom: 25px;\n  padding: 12px;\n  text-align: center;\n  width: 100%;\n}\n#" + id + " .st-btn {\n  " + st.BORDER_BOX + "\n  " + (st.BORDER_RADIUS(4)) + "\n  " + (st.TRANSITION()) + "\n  background-color: #fff;\n  border: 0;\n  background: " + color + ";\n  color: #fff;\n  cursor: pointer;\n  display: inline-block;\n  font-size: 18px;\n  height: 48px;\n  line-height: 48px;\n  min-width: 120px;\n  padding: 0 20px;\n}\n#" + id + " .st-close {\n  " + (st.BOX_SHADOW('0 0 20px black')) + "\n  " + (st.BORDER_RADIUS(18)) + "\n  background: #555;\n  border: 3px solid white;\n  cursor: pointer;\n  font-size: 24px;\n  height: 36px;\n  padding-top: 1px;\n  position: absolute;\n  right: -15px;\n  top: -23px;\n  width: 36px;\n}";
     hover_css = "#" + id + " .st-btn:hover {\n}";
     css = common_css;
     if (!st.mobile) {
       css += hover_css;
     }
     st.css(css);
-    html = "<div class=\"st-backdrop\"></div>\n<div class=\"st-modal\">\n  <div class=\"st-headline\">" + headline + "</div>\n  <div class=\"st-message\">" + message + "</div>\n  <div class=\"st-error\"></div>\n  <input class=\"st-email\" type=\"text\" placeholder=\"you@domain.com\" />\n  <div class=\"st-btn\">" + button_label + "</div>\n  <div class=\"st-close\">\n    " + st.ICONS['close'] + "\n  </div>\n</div>";
+    html = "<div class=\"st-backdrop\"></div>\n<div class=\"st-modal\">\n  <div class=\"st-<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->line\">" + <head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->line + "</div>\n  <div class=\"st-message\">" + message + "</div>\n  <div class=\"st-error\"></div>\n  <input class=\"st-email\" type=\"text\" placeholder=\"you@domain.com\" />\n  <div class=\"st-btn\">" + button_label + "</div>\n  <div class=\"st-close\">\n    " + st.ICONS['close'] + "\n  </div>\n</div>";
     $el.innerHTML = html;
     $backdrop = $el.querySelector('.st-backdrop');
     $button = $el.querySelector('.st-btn');
@@ -4070,7 +4142,13 @@ __stdos__.logger = {
       st.storage.set('st_email_list_builder_collected', true);
       st.addClass($modal, 'st-hidden');
       return setTimeout((function() {
-        html = "<div class=\"st-headline\">" + thanks + "</div>";
+        html = "<div class=\"st-<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->line\">" + thanks + "</div>";
         $modal.innerHTML = html;
         st.removeClass($modal, 'st-hidden');
         return setTimeout((function() {

@@ -1,5 +1,5 @@
 // --- 动态加载头部和尾部 ---
-async function loadComponent(url, placeholderId, isHeader = false) {
+async function loadComponent(url, placeholderId, isheader = false) {
     try {
         const response = await fetch(url);
         if (!response.ok) throw new Error(`Could not load ${url}: ${response.statusText}`);
@@ -8,8 +8,8 @@ async function loadComponent(url, placeholderId, isHeader = false) {
         if (placeholder) {
             // 使用 innerHTML 替换占位符内容，而不是替换占位符本身
             placeholder.innerHTML = text;
-            if (isHeader) {
-                initializeHeaderScripts(); // 如果是头部，则初始化相关脚本
+            if (isheader) {
+                initializeheaderScripts(); // 如果是头部，则初始化相关脚本
             }
         }
     } catch (error) {
@@ -25,7 +25,7 @@ async function loadLayout() {
 }
 
 // --- 初始化头部相关脚本的函数 ---
-function initializeHeaderScripts() {
+function initializeheaderScripts() {
     // --- 高亮当前页面的导航链接 ---
     const currentPageFile = window.location.pathname.split('/').pop() || 'index.html';
     

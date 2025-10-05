@@ -4,7 +4,13 @@
     --secondary-color: #00336a;  /* Darker blue for hover */
     --light-blue-bg: #edf1f5;    /* Coway Light Blue Background */
     --light-color: #f7f7f7;      /* Light grey background */
-    --dark-color: #212529;       /* Dark color for headings */
+    --dark-color: #212529;       /* Dark color for <head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->ings */
     --text-color: #555;          /* Main body text */
     --font-family: 'Noto Sans SC', sans-serif;
 }

@@ -101,13 +101,43 @@ b.prototype.get=function(k){return d(k)&&sa(k,g)?k[g][this.h]:void 0};
 b.prototype.has=function(k){return d(k)&&sa(k,g)&&sa(k[g],this.h)};
 b.prototype.delete=function(k){return d(k)&&sa(k,g)&&sa(k[g],this.h)?delete k[g][this.h]:!1};
 return b});
-u("Map",function(a){function b(){var h={};return h.previous=h.next=h.head=h}
-function c(h,k){var l=h[1];return ea(function(){if(l){for(;l.head!=h[1];)l=l.previous;for(;l.next!=l.head;)return l=l.next,{done:!1,value:k(l)};l=null}return{done:!0,value:void 0}})}
+u("Map",function(a){function b(){var h={};return h.previous=h.next=h.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->=h}
+function c(h,k){var l=h[1];return ea(function(){if(l){for(;l.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->!=h[1];)l=l.previous;for(;l.next!=l.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->;)return l=l.next,{done:!1,value:k(l)};l=null}return{done:!0,value:void 0}})}
 function d(h,k){var l=k&&typeof k;l=="object"||l=="function"?f.has(k)?l=f.get(k):(l=""+ ++g,f.set(k,l)):l="p_"+k;var m=h[0][l];if(m&&sa(h[0],l))for(h=0;h<m.length;h++){var n=m[h];if(k!==k&&n.key!==n.key||k===n.key)return{id:l,list:m,index:h,entry:n}}return{id:l,list:m,index:-1,entry:void 0}}
 function e(h){this[0]={};this[1]=b();this.size=0;if(h){h=y(h);for(var k;!(k=h.next()).done;)k=k.value,this.set(k[0],k[1])}}
 if(function(){if(!a||typeof a!="function"||!a.prototype.entries||typeof Object.seal!="function")return!1;try{var h=Object.seal({x:4}),k=new a(y([[h,"s"]]));if(k.get(h)!="s"||k.size!=1||k.get({x:4})||k.set({x:4},"t")!=k||k.size!=2)return!1;var l=k.entries(),m=l.next();if(m.done||m.value[0]!=h||m.value[1]!="s")return!1;m=l.next();return m.done||m.value[0].x!=4||m.value[1]!="t"||!l.next().done?!1:!0}catch(n){return!1}}())return a;
-var f=new WeakMap;e.prototype.set=function(h,k){h=h===0?0:h;var l=d(this,h);l.list||(l.list=this[0][l.id]=[]);l.entry?l.entry.value=k:(l.entry={next:this[1],previous:this[1].previous,head:this[1],key:h,value:k},l.list.push(l.entry),this[1].previous.next=l.entry,this[1].previous=l.entry,this.size++);return this};
-e.prototype.delete=function(h){h=d(this,h);return h.entry&&h.list?(h.list.splice(h.index,1),h.list.length||delete this[0][h.id],h.entry.previous.next=h.entry.next,h.entry.next.previous=h.entry.previous,h.entry.head=null,this.size--,!0):!1};
+var f=new WeakMap;e.prototype.set=function(h,k){h=h===0?0:h;var l=d(this,h);l.list||(l.list=this[0][l.id]=[]);l.entry?l.entry.value=k:(l.entry={next:this[1],previous:this[1].previous,<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->:this[1],key:h,value:k},l.list.push(l.entry),this[1].previous.next=l.entry,this[1].previous=l.entry,this.size++);return this};
+e.prototype.delete=function(h){h=d(this,h);return h.entry&&h.list?(h.list.splice(h.index,1),h.list.length||delete this[0][h.id],h.entry.previous.next=h.entry.next,h.entry.next.previous=h.entry.previous,h.entry.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->=null,this.size--,!0):!1};
 e.prototype.clear=function(){this[0]={};this[1]=this[1].previous=b();this.size=0};
 e.prototype.has=function(h){return!!d(this,h).entry};
 e.prototype.get=function(h){return(h=d(this,h).entry)&&h.value};
@@ -545,7 +575,13 @@ function Li(a){if(!a||typeof a!=="object")return a;if(typeof a.clone==="function
 var Mi="constructor hasOwnProperty isPrototypeOf propertyIsEnumerable toLocaleString toString valueOf".split(" ");function Ni(a,b){for(var c,d,e=1;e<arguments.length;e++){d=arguments[e];for(c in d)a[c]=d[c];for(var f=0;f<Mi.length;f++)c=Mi[f],Object.prototype.hasOwnProperty.call(d,c)&&(a[c]=d[c])}}
 ;function Oi(a,b){this.h=a===Pi&&b||""}
 Oi.prototype.toString=function(){return this.h};
-var Pi={};new Oi(Pi,"");"ARTICLE SECTION NAV ASIDE H1 H2 H3 H4 H5 H6 HEADER FOOTER ADDRESS P HR PRE BLOCKQUOTE OL UL LH LI DL DT DD FIGURE FIGCAPTION MAIN DIV EM STRONG SMALL S CITE Q DFN ABBR RUBY RB RT RTC RP DATA TIME CODE VAR SAMP KBD SUB SUP I B U MARK BDI BDO SPAN BR WBR NOBR INS DEL PICTURE PARAM TRACK MAP TABLE CAPTION COLGROUP COL TBODY THEAD TFOOT TR TD TH SELECT DATALIST OPTGROUP OPTION OUTPUT PROGRESS METER FIELDSET LEGEND DETAILS SUMMARY MENU DIALOG SLOT CANVAS FONT CENTER ACRONYM BASEFONT BIG DIR HGROUP STRIKE TT".split(" ").concat(["BUTTON",
+var Pi={};new Oi(Pi,"");"ARTICLE SECTION NAV ASIDE H1 H2 H3 H4 H5 H6 header FOOTER ADDRESS P HR PRE BLOCKQUOTE OL UL LH LI DL DT DD FIGURE FIGCAPTION MAIN DIV EM STRONG SMALL S CITE Q DFN ABBR RUBY RB RT RTC RP DATA TIME CODE VAR SAMP KBD SUB SUP I B U MARK BDI BDO SPAN BR WBR NOBR INS DEL PICTURE PARAM TRACK MAP TABLE CAPTION COLGROUP COL TBODY T<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags --> TFOOT TR TD TH SELECT DATALIST OPTGROUP OPTION OUTPUT PROGRESS METER FIELDSET LEGEND DETAILS SUMMARY MENU DIALOG SLOT CANVAS FONT CENTER ACRONYM BASEFONT BIG DIR HGROUP STRIKE TT".split(" ").concat(["BUTTON",
 "INPUT"]);function Qi(a){var b=document;return typeof a==="string"?b.getElementById(a):a}
 function Ri(a){var b=document;a=String(a);b.contentType==="application/xhtml+xml"&&(a=a.toLowerCase());return b.createElement(a)}
 function Si(a){for(var b;b=a.firstChild;)a.removeChild(b)}
@@ -734,7 +770,7 @@ ab(il,nk);var jl=/^https?$/i,kl=["POST","PUT"],ll=[];function ml(a,b,c,d,e,f,g){
 p=il.prototype;p.Ve=function(){this.dispose();Xb(ll,this)};
 p.send=function(a,b,c,d){if(this.M)throw Error("[goog.net.XhrIo] Object is active with another request="+this.aa+"; newUri="+a);b=b?b.toUpperCase():"GET";this.aa=a;this.o="";this.J=!1;this.h=!0;this.M=new XMLHttpRequest;this.M.onreadystatechange=qk(Xa(this.de,this));try{this.getStatus(),this.V=!0,this.M.open(b,String(a),!0),this.V=!1}catch(g){this.getStatus();nl(this,g);return}a=c||"";c=new Map(this.headers);if(d)if(Object.getPrototypeOf(d)===Object.prototype)for(var e in d)c.set(e,d[e]);else if(typeof d.keys===
 "function"&&typeof d.get==="function"){e=y(d.keys());for(var f=e.next();!f.done;f=e.next())f=f.value,c.set(f,d.get(f))}else throw Error("Unknown input type for opt_headers: "+String(d));d=Array.from(c.keys()).find(function(g){return"content-type"==g.toLowerCase()});
-e=D.FormData&&a instanceof D.FormData;!(Rb(kl,b)>=0)||d||e||c.set("Content-Type","application/x-www-form-urlencoded;charset=utf-8");b=y(c);for(d=b.next();!d.done;d=b.next())c=y(d.value),d=c.next().value,c=c.next().value,this.M.setRequestHeader(d,c);this.na&&(this.M.responseType=this.na);"withCredentials"in this.M&&this.M.withCredentials!==this.ha&&(this.M.withCredentials=this.ha);try{this.u&&(clearTimeout(this.u),this.u=null),this.G>0&&(this.getStatus(),this.u=setTimeout(this.Eg.bind(this),this.G)),
+e=D.FormData&&a instanceof D.FormData;!(Rb(kl,b)>=0)||d||e||c.set("Content-Type","application/x-www-form-urlencoded;charset=utf-8");b=y(c);for(d=b.next();!d.done;d=b.next())c=y(d.value),d=c.next().value,c=c.next().value,this.M.setRequestheader(d,c);this.na&&(this.M.responseType=this.na);"withCredentials"in this.M&&this.M.withCredentials!==this.ha&&(this.M.withCredentials=this.ha);try{this.u&&(clearTimeout(this.u),this.u=null),this.G>0&&(this.getStatus(),this.u=setTimeout(this.Eg.bind(this),this.G)),
 this.getStatus(),this.B=!0,this.M.send(a),this.B=!1}catch(g){this.getStatus(),nl(this,g)}};
 p.Eg=function(){typeof Ka!="undefined"&&this.M&&(this.o="Timed out after "+this.G+"ms, aborting",this.getStatus(),ok(this,"timeout"),this.abort(8))};
 function nl(a,b){a.h=!1;a.M&&(a.j=!0,a.M.abort(),a.j=!1);a.o=b;ol(a);pl(a)}
@@ -826,8 +862,20 @@ return a.promises[d]}
 function Sl(a,b){return b?Tl(b):a?Ul(a):Promise.resolve()}
 function Tl(a){return new Promise(function(b,c){var d=Ri("SCRIPT"),e=Nl(a);Lb(d,e);d.onload=function(){Ti(d);b()};
 d.onerror=function(){Ti(d);c(Error("EWLS"))};
-(document.getElementsByTagName("HEAD")[0]||document.documentElement).appendChild(d)})}
-function Ul(a){return new Promise(function(b){var c=Ri("SCRIPT");if(a){var d=yf(Zf(a,6,void 0,Yf));d=d===null||d===void 0?null:Ib(d)}else d=null;c.textContent=Jb(d);Kb(c);(document.getElementsByTagName("HEAD")[0]||document.documentElement).appendChild(c);Ti(c);b()})}
+(document.getElementsByTagName("<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->")[0]||document.documentElement).appendChild(d)})}
+function Ul(a){return new Promise(function(b){var c=Ri("SCRIPT");if(a){var d=yf(Zf(a,6,void 0,Yf));d=d===null||d===void 0?null:Ib(d)}else d=null;c.textContent=Jb(d);Kb(c);(document.getElementsByTagName("<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->")[0]||document.documentElement).appendChild(c);Ti(c);b()})}
 ;function Vl(a){this.D=M(a)}
 v(Vl,N);function Wl(a,b){return hg(a,1,xf(b))}
 function Xl(a,b){return hg(a,2,xf(b))}
@@ -942,7 +990,13 @@ v(mn,nk);function pn(){var a=qn;mn.instance||(mn.instance=new mn(a));return mn.i
 mn.prototype.dispose=function(){window.removeEventListener("offline",this.o);window.removeEventListener("online",this.o);this.Ea.sa(this.B);delete mn.instance};
 mn.prototype.va=function(){return this.h};
 function on(a){a.B=a.Ea.ra(function(){var b;return B(function(c){if(c.h==1)return a.h?((b=window.navigator)==null?0:b.onLine)?c.A(3):c.yield(nn(a),3):c.yield(nn(a),3);on(a);c.h=0})},3E4)}
-function nn(a,b){return a.u?a.u:a.u=new Promise(function(c){var d,e,f,g;return B(function(h){switch(h.h){case 1:return d=window.AbortController?new window.AbortController:void 0,f=(e=d)==null?void 0:e.signal,g=!1,xa(h,2,3),d&&(a.j=a.Ea.ra(function(){d.abort()},b||2E4)),h.yield(fetch("/generate_204",{method:"HEAD",
+function nn(a,b){return a.u?a.u:a.u=new Promise(function(c){var d,e,f,g;return B(function(h){switch(h.h){case 1:return d=window.AbortController?new window.AbortController:void 0,f=(e=d)==null?void 0:e.signal,g=!1,xa(h,2,3),d&&(a.j=a.Ea.ra(function(){d.abort()},b||2E4)),h.yield(fetch("/generate_204",{method:"<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->",
 signal:f}),5);case 5:g=!0;case 3:Aa(h);a.u=void 0;a.j&&(a.Ea.sa(a.j),a.j=0);g!==a.h&&(a.h=g,a.h?ok(a,"networkstatus-online"):ok(a,"networkstatus-offline"));c(g);Ba(h,0);break;case 2:za(h),g=!1,h.A(3)}})})}
 ;function rn(){this.data=[];this.h=-1}
 rn.prototype.set=function(a,b){b=b===void 0?!0:b;0<=a&&a<52&&Number.isInteger(a)&&this.data[a]!==b&&(this.data[a]=b,this.h=-1)};
@@ -1130,11 +1184,83 @@ function R(a,b){a.da[a.pending++]=b}
 function ip(a,b){a.da[a.pending++]=b>>>8&255;a.da[a.pending++]=b&255}
 function jp(a,b){var c=a.Zd,d=a.v,e=a.ya,f=a.ce,g=a.v>a.ma-262?a.v-(a.ma-262):0,h=a.window,k=a.kb,l=a.La,m=a.v+258,n=h[d+e-1],r=h[d+e];a.ya>=a.Ud&&(c>>=2);f>a.F&&(f=a.F);do{var t=b;if(h[t+e]===r&&h[t+e-1]===n&&h[t]===h[d]&&h[++t]===h[d+1]){d+=2;for(t++;h[++d]===h[++t]&&h[++d]===h[++t]&&h[++d]===h[++t]&&h[++d]===h[++t]&&h[++d]===h[++t]&&h[++d]===h[++t]&&h[++d]===h[++t]&&h[++d]===h[++t]&&d<m;);t=258-(m-d);d=m-258;if(t>e){a.Jb=b;e=t;if(t>=f)break;n=h[d+e-1];r=h[d+e]}}}while((b=l[b&k])>g&&--c!==0);return e<=
 a.F?e:a.F}
-function kp(a){var b=a.ma,c;do{var d=a.Ge-a.F-a.v;if(a.v>=b+(b-262)){P.Bb(a.window,a.window,b,b,0);a.Jb-=b;a.v-=b;a.xa-=b;var e=c=a.Kc;do{var f=a.head[--e];a.head[e]=f>=b?f-b:0}while(--c);e=c=b;do f=a.La[--e],a.La[e]=f>=b?f-b:0;while(--c);d+=b}if(a.R.oa===0)break;e=a.R;c=a.window;f=a.v+a.F;var g=e.oa;g>d&&(g=d);g===0?c=0:(e.oa-=g,P.Bb(c,e.input,e.ub,g,f),e.state.wrap===1?e.K=ro(e.K,c,g,f):e.state.wrap===2&&(e.K=so(e.K,c,g,f)),e.ub+=g,e.xb+=g,c=g);a.F+=c;if(a.F+a.la>=3)for(d=a.v-a.la,a.S=a.window[d],
-a.S=(a.S<<a.Qa^a.window[d+1])&a.Pa;a.la&&!(a.S=(a.S<<a.Qa^a.window[d+3-1])&a.Pa,a.La[d&a.kb]=a.head[a.S],a.head[a.S]=d,d++,a.la--,a.F+a.la<3););}while(a.F<262&&a.R.oa!==0)}
-function lp(a,b){for(var c;;){if(a.F<262){kp(a);if(a.F<262&&b===0)return 1;if(a.F===0)break}c=0;a.F>=3&&(a.S=(a.S<<a.Qa^a.window[a.v+3-1])&a.Pa,c=a.La[a.v&a.kb]=a.head[a.S],a.head[a.S]=a.v);c!==0&&a.v-c<=a.ma-262&&(a.U=jp(a,c));if(a.U>=3)if(c=dp(a,a.v-a.Jb,a.U-3),a.F-=a.U,a.U<=a.ud&&a.F>=3){a.U--;do a.v++,a.S=(a.S<<a.Qa^a.window[a.v+3-1])&a.Pa,a.La[a.v&a.kb]=a.head[a.S],a.head[a.S]=a.v;while(--a.U!==0);a.v++}else a.v+=a.U,a.U=0,a.S=a.window[a.v],a.S=(a.S<<a.Qa^a.window[a.v+1])&a.Pa;else c=dp(a,0,
+function kp(a){var b=a.ma,c;do{var d=a.Ge-a.F-a.v;if(a.v>=b+(b-262)){P.Bb(a.window,a.window,b,b,0);a.Jb-=b;a.v-=b;a.xa-=b;var e=c=a.Kc;do{var f=a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[--e];a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[e]=f>=b?f-b:0}while(--c);e=c=b;do f=a.La[--e],a.La[e]=f>=b?f-b:0;while(--c);d+=b}if(a.R.oa===0)break;e=a.R;c=a.window;f=a.v+a.F;var g=e.oa;g>d&&(g=d);g===0?c=0:(e.oa-=g,P.Bb(c,e.input,e.ub,g,f),e.state.wrap===1?e.K=ro(e.K,c,g,f):e.state.wrap===2&&(e.K=so(e.K,c,g,f)),e.ub+=g,e.xb+=g,c=g);a.F+=c;if(a.F+a.la>=3)for(d=a.v-a.la,a.S=a.window[d],
+a.S=(a.S<<a.Qa^a.window[d+1])&a.Pa;a.la&&!(a.S=(a.S<<a.Qa^a.window[d+3-1])&a.Pa,a.La[d&a.kb]=a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S],a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S]=d,d++,a.la--,a.F+a.la<3););}while(a.F<262&&a.R.oa!==0)}
+function lp(a,b){for(var c;;){if(a.F<262){kp(a);if(a.F<262&&b===0)return 1;if(a.F===0)break}c=0;a.F>=3&&(a.S=(a.S<<a.Qa^a.window[a.v+3-1])&a.Pa,c=a.La[a.v&a.kb]=a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S],a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S]=a.v);c!==0&&a.v-c<=a.ma-262&&(a.U=jp(a,c));if(a.U>=3)if(c=dp(a,a.v-a.Jb,a.U-3),a.F-=a.U,a.U<=a.ud&&a.F>=3){a.U--;do a.v++,a.S=(a.S<<a.Qa^a.window[a.v+3-1])&a.Pa,a.La[a.v&a.kb]=a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S],a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S]=a.v;while(--a.U!==0);a.v++}else a.v+=a.U,a.U=0,a.S=a.window[a.v],a.S=(a.S<<a.Qa^a.window[a.v+1])&a.Pa;else c=dp(a,0,
 a.window[a.v]),a.F--,a.v++;if(c&&(hp(a,!1),a.R.T===0))return 1}a.la=a.v<2?a.v:2;return b===4?(hp(a,!0),a.R.T===0?3:4):a.Aa&&(hp(a,!1),a.R.T===0)?1:2}
-function mp(a,b){for(var c,d;;){if(a.F<262){kp(a);if(a.F<262&&b===0)return 1;if(a.F===0)break}c=0;a.F>=3&&(a.S=(a.S<<a.Qa^a.window[a.v+3-1])&a.Pa,c=a.La[a.v&a.kb]=a.head[a.S],a.head[a.S]=a.v);a.ya=a.U;a.ge=a.Jb;a.U=2;c!==0&&a.ya<a.ud&&a.v-c<=a.ma-262&&(a.U=jp(a,c),a.U<=5&&(a.strategy===1||a.U===3&&a.v-a.Jb>4096)&&(a.U=2));if(a.ya>=3&&a.U<=a.ya){d=a.v+a.F-3;c=dp(a,a.v-1-a.ge,a.ya-3);a.F-=a.ya-1;a.ya-=2;do++a.v<=d&&(a.S=(a.S<<a.Qa^a.window[a.v+3-1])&a.Pa,a.La[a.v&a.kb]=a.head[a.S],a.head[a.S]=a.v);
+function mp(a,b){for(var c,d;;){if(a.F<262){kp(a);if(a.F<262&&b===0)return 1;if(a.F===0)break}c=0;a.F>=3&&(a.S=(a.S<<a.Qa^a.window[a.v+3-1])&a.Pa,c=a.La[a.v&a.kb]=a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S],a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S]=a.v);a.ya=a.U;a.ge=a.Jb;a.U=2;c!==0&&a.ya<a.ud&&a.v-c<=a.ma-262&&(a.U=jp(a,c),a.U<=5&&(a.strategy===1||a.U===3&&a.v-a.Jb>4096)&&(a.U=2));if(a.ya>=3&&a.U<=a.ya){d=a.v+a.F-3;c=dp(a,a.v-1-a.ge,a.ya-3);a.F-=a.ya-1;a.ya-=2;do++a.v<=d&&(a.S=(a.S<<a.Qa^a.window[a.v+3-1])&a.Pa,a.La[a.v&a.kb]=a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S],a.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[a.S]=a.v);
 while(--a.ya!==0);a.sb=0;a.U=2;a.v++;if(c&&(hp(a,!1),a.R.T===0))return 1}else if(a.sb){if((c=dp(a,0,a.window[a.v-1]))&&hp(a,!1),a.v++,a.F--,a.R.T===0)return 1}else a.sb=1,a.v++,a.F--}a.sb&&(dp(a,0,a.window[a.v-1]),a.sb=0);a.la=a.v<2?a.v:2;return b===4?(hp(a,!0),a.R.T===0?3:4):a.Aa&&(hp(a,!1),a.R.T===0)?1:2}
 function np(a,b){for(var c,d,e,f=a.window;;){if(a.F<=258){kp(a);if(a.F<=258&&b===0)return 1;if(a.F===0)break}a.U=0;if(a.F>=3&&a.v>0&&(d=a.v-1,c=f[d],c===f[++d]&&c===f[++d]&&c===f[++d])){for(e=a.v+258;c===f[++d]&&c===f[++d]&&c===f[++d]&&c===f[++d]&&c===f[++d]&&c===f[++d]&&c===f[++d]&&c===f[++d]&&d<e;);a.U=258-(e-d);a.U>a.F&&(a.U=a.F)}a.U>=3?(c=dp(a,1,a.U-3),a.F-=a.U,a.v+=a.U,a.U=0):(c=dp(a,0,a.window[a.v]),a.F--,a.v++);if(c&&(hp(a,!1),a.R.T===0))return 1}a.la=0;return b===4?(hp(a,!0),a.R.T===0?3:4):
 a.Aa&&(hp(a,!1),a.R.T===0)?1:2}
@@ -1142,20 +1268,62 @@ function op(a,b){for(var c;;){if(a.F===0&&(kp(a),a.F===0)){if(b===0)return 1;bre
 function pp(a,b,c,d,e){this.yf=a;this.Nf=b;this.Tf=c;this.Mf=d;this.uf=e}
 var qp;qp=[new pp(0,0,0,0,function(a,b){var c=65535;for(c>a.Ba-5&&(c=a.Ba-5);;){if(a.F<=1){kp(a);if(a.F===0&&b===0)return 1;if(a.F===0)break}a.v+=a.F;a.F=0;var d=a.xa+c;if(a.v===0||a.v>=d)if(a.F=a.v-d,a.v=d,hp(a,!1),a.R.T===0)return 1;if(a.v-a.xa>=a.ma-262&&(hp(a,!1),a.R.T===0))return 1}a.la=0;if(b===4)return hp(a,!0),a.R.T===0?3:4;a.v>a.xa&&hp(a,!1);return 1}),
 new pp(4,4,8,4,lp),new pp(4,5,16,8,lp),new pp(4,6,32,32,lp),new pp(4,4,16,16,mp),new pp(8,16,32,32,mp),new pp(8,16,128,128,mp),new pp(8,32,128,256,mp),new pp(32,128,258,1024,mp),new pp(32,258,258,4096,mp)];
-function rp(){this.R=null;this.status=0;this.da=null;this.wrap=this.pending=this.lc=this.Ba=0;this.I=null;this.Da=0;this.method=8;this.Ib=-1;this.kb=this.Id=this.ma=0;this.window=null;this.Ge=0;this.head=this.La=null;this.ce=this.Ud=this.strategy=this.level=this.ud=this.Zd=this.ya=this.F=this.Jb=this.v=this.sb=this.ge=this.U=this.xa=this.Qa=this.Pa=this.qd=this.Kc=this.S=0;this.ta=new P.Ma(1146);this.nb=new P.Ma(122);this.ja=new P.Ma(78);fp(this.ta);fp(this.nb);fp(this.ja);this.Nd=this.Gc=this.Lc=
+function rp(){this.R=null;this.status=0;this.da=null;this.wrap=this.pending=this.lc=this.Ba=0;this.I=null;this.Da=0;this.method=8;this.Ib=-1;this.kb=this.Id=this.ma=0;this.window=null;this.Ge=0;this.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->=this.La=null;this.ce=this.Ud=this.strategy=this.level=this.ud=this.Zd=this.ya=this.F=this.Jb=this.v=this.sb=this.ge=this.U=this.xa=this.Qa=this.Pa=this.qd=this.Kc=this.S=0;this.ta=new P.Ma(1146);this.nb=new P.Ma(122);this.ja=new P.Ma(78);fp(this.ta);fp(this.nb);fp(this.ja);this.Nd=this.Gc=this.Lc=
 null;this.Na=new P.Ma(16);this.ea=new P.Ma(573);fp(this.ea);this.Gb=this.Ra=0;this.depth=new P.Ma(573);fp(this.depth);this.ia=this.pa=this.la=this.matches=this.Qb=this.Ta=this.Zb=this.Aa=this.fc=this.sd=0}
 function sp(a,b){if(!a||!a.state||b>5||b<0)return a?ep(a,-2):-2;var c=a.state;if(!a.output||!a.input&&a.oa!==0||c.status===666&&b!==4)return ep(a,a.T===0?-5:-2);c.R=a;var d=c.Ib;c.Ib=b;if(c.status===42)if(c.wrap===2)a.K=0,R(c,31),R(c,139),R(c,8),c.I?(R(c,(c.I.text?1:0)+(c.I.cb?2:0)+(c.I.extra?4:0)+(c.I.name?8:0)+(c.I.comment?16:0)),R(c,c.I.time&255),R(c,c.I.time>>8&255),R(c,c.I.time>>16&255),R(c,c.I.time>>24&255),R(c,c.level===9?2:c.strategy>=2||c.level<2?4:0),R(c,c.I.os&255),c.I.extra&&c.I.extra.length&&
 (R(c,c.I.extra.length&255),R(c,c.I.extra.length>>8&255)),c.I.cb&&(a.K=so(a.K,c.da,c.pending,0)),c.Da=0,c.status=69):(R(c,0),R(c,0),R(c,0),R(c,0),R(c,0),R(c,c.level===9?2:c.strategy>=2||c.level<2?4:0),R(c,3),c.status=113);else{var e=8+(c.Id-8<<4)<<8;e|=(c.strategy>=2||c.level<2?0:c.level<6?1:c.level===6?2:3)<<6;c.v!==0&&(e|=32);c.status=113;ip(c,e+(31-e%31));c.v!==0&&(ip(c,a.K>>>16),ip(c,a.K&65535));a.K=1}if(c.status===69)if(c.I.extra){for(e=c.pending;c.Da<(c.I.extra.length&65535)&&(c.pending!==c.Ba||
 (c.I.cb&&c.pending>e&&(a.K=so(a.K,c.da,c.pending-e,e)),gp(a),e=c.pending,c.pending!==c.Ba));)R(c,c.I.extra[c.Da]&255),c.Da++;c.I.cb&&c.pending>e&&(a.K=so(a.K,c.da,c.pending-e,e));c.Da===c.I.extra.length&&(c.Da=0,c.status=73)}else c.status=73;if(c.status===73)if(c.I.name){e=c.pending;do{if(c.pending===c.Ba&&(c.I.cb&&c.pending>e&&(a.K=so(a.K,c.da,c.pending-e,e)),gp(a),e=c.pending,c.pending===c.Ba)){var f=1;break}f=c.Da<c.I.name.length?c.I.name.charCodeAt(c.Da++)&255:0;R(c,f)}while(f!==0);c.I.cb&&c.pending>
 e&&(a.K=so(a.K,c.da,c.pending-e,e));f===0&&(c.Da=0,c.status=91)}else c.status=91;if(c.status===91)if(c.I.comment){e=c.pending;do{if(c.pending===c.Ba&&(c.I.cb&&c.pending>e&&(a.K=so(a.K,c.da,c.pending-e,e)),gp(a),e=c.pending,c.pending===c.Ba)){f=1;break}f=c.Da<c.I.comment.length?c.I.comment.charCodeAt(c.Da++)&255:0;R(c,f)}while(f!==0);c.I.cb&&c.pending>e&&(a.K=so(a.K,c.da,c.pending-e,e));f===0&&(c.status=103)}else c.status=103;c.status===103&&(c.I.cb?(c.pending+2>c.Ba&&gp(a),c.pending+2<=c.Ba&&(R(c,
 a.K&255),R(c,a.K>>8&255),a.K=0,c.status=113)):c.status=113);if(c.pending!==0){if(gp(a),a.T===0)return c.Ib=-1,0}else if(a.oa===0&&(b<<1)-(b>4?9:0)<=(d<<1)-(d>4?9:0)&&b!==4)return ep(a,-5);if(c.status===666&&a.oa!==0)return ep(a,-5);if(a.oa!==0||c.F!==0||b!==0&&c.status!==666){d=c.strategy===2?op(c,b):c.strategy===3?np(c,b):qp[c.level].uf(c,b);if(d===3||d===4)c.status=666;if(d===1||d===3)return a.T===0&&(c.Ib=-1),0;if(d===2&&(b===1?(Po(c,2,3),Qo(c,256,Do),c.ia===16?(Oo(c,c.pa),c.pa=0,c.ia=0):c.ia>=
-8&&(c.da[c.pending++]=c.pa&255,c.pa>>=8,c.ia-=8)):b!==5&&(Po(c,0,3),Vo(c,0,0),b===3&&(fp(c.head),c.F===0&&(c.v=0,c.xa=0,c.la=0))),gp(a),a.T===0))return c.Ib=-1,0}if(b!==4)return 0;if(c.wrap<=0)return 1;c.wrap===2?(R(c,a.K&255),R(c,a.K>>8&255),R(c,a.K>>16&255),R(c,a.K>>24&255),R(c,a.xb&255),R(c,a.xb>>8&255),R(c,a.xb>>16&255),R(c,a.xb>>24&255)):(ip(c,a.K>>>16),ip(c,a.K&65535));gp(a);c.wrap>0&&(c.wrap=-c.wrap);return c.pending!==0?0:1}
+8&&(c.da[c.pending++]=c.pa&255,c.pa>>=8,c.ia-=8)):b!==5&&(Po(c,0,3),Vo(c,0,0),b===3&&(fp(c.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->),c.F===0&&(c.v=0,c.xa=0,c.la=0))),gp(a),a.T===0))return c.Ib=-1,0}if(b!==4)return 0;if(c.wrap<=0)return 1;c.wrap===2?(R(c,a.K&255),R(c,a.K>>8&255),R(c,a.K>>16&255),R(c,a.K>>24&255),R(c,a.xb&255),R(c,a.xb>>8&255),R(c,a.xb>>16&255),R(c,a.xb>>24&255)):(ip(c,a.K>>>16),ip(c,a.K&65535));gp(a);c.wrap>0&&(c.wrap=-c.wrap);return c.pending!==0?0:1}
 ;var tp={};tp=function(){this.input=null;this.xb=this.oa=this.ub=0;this.output=null;this.Fd=this.T=this.Mb=0;this.msg="";this.state=null;this.kd=2;this.K=0};var up=Object.prototype.toString;
 function vp(a){if(!(this instanceof vp))return new vp(a);a=this.options=P.assign({level:-1,method:8,chunkSize:16384,windowBits:15,memLevel:8,strategy:0,to:""},a||{});a.raw&&a.windowBits>0?a.windowBits=-a.windowBits:a.gzip&&a.windowBits>0&&a.windowBits<16&&(a.windowBits+=16);this.err=0;this.msg="";this.ended=!1;this.chunks=[];this.R=new tp;this.R.T=0;var b=this.R;var c=a.level,d=a.method,e=a.windowBits,f=a.memLevel,g=a.strategy;if(b){var h=1;c===-1&&(c=6);e<0?(h=0,e=-e):e>15&&(h=2,e-=16);if(f<1||f>
-9||d!==8||e<8||e>15||c<0||c>9||g<0||g>4)b=ep(b,-2);else{e===8&&(e=9);var k=new rp;b.state=k;k.R=b;k.wrap=h;k.I=null;k.Id=e;k.ma=1<<k.Id;k.kb=k.ma-1;k.qd=f+7;k.Kc=1<<k.qd;k.Pa=k.Kc-1;k.Qa=~~((k.qd+3-1)/3);k.window=new P.yb(k.ma*2);k.head=new P.Ma(k.Kc);k.La=new P.Ma(k.ma);k.fc=1<<f+6;k.Ba=k.fc*4;k.da=new P.yb(k.Ba);k.Zb=1*k.fc;k.sd=3*k.fc;k.level=c;k.strategy=g;k.method=d;if(b&&b.state){b.xb=b.Fd=0;b.kd=2;c=b.state;c.pending=0;c.lc=0;c.wrap<0&&(c.wrap=-c.wrap);c.status=c.wrap?42:113;b.K=c.wrap===2?
+9||d!==8||e<8||e>15||c<0||c>9||g<0||g>4)b=ep(b,-2);else{e===8&&(e=9);var k=new rp;b.state=k;k.R=b;k.wrap=h;k.I=null;k.Id=e;k.ma=1<<k.Id;k.kb=k.ma-1;k.qd=f+7;k.Kc=1<<k.qd;k.Pa=k.Kc-1;k.Qa=~~((k.qd+3-1)/3);k.window=new P.yb(k.ma*2);k.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->=new P.Ma(k.Kc);k.La=new P.Ma(k.ma);k.fc=1<<f+6;k.Ba=k.fc*4;k.da=new P.yb(k.Ba);k.Zb=1*k.fc;k.sd=3*k.fc;k.level=c;k.strategy=g;k.method=d;if(b&&b.state){b.xb=b.Fd=0;b.kd=2;c=b.state;c.pending=0;c.lc=0;c.wrap<0&&(c.wrap=-c.wrap);c.status=c.wrap?42:113;b.K=c.wrap===2?
 0:1;c.Ib=0;if(!cp){d=Array(16);for(f=g=0;f<28;f++)for(Ho[f]=g,e=0;e<1<<zo[f];e++)Go[g++]=f;Go[g-1]=f;for(f=g=0;f<16;f++)for(Io[f]=g,e=0;e<1<<Ao[f];e++)Fo[g++]=f;for(g>>=7;f<30;f++)for(Io[f]=g<<7,e=0;e<1<<Ao[f]-7;e++)Fo[256+g++]=f;for(e=0;e<=15;e++)d[e]=0;for(e=0;e<=143;)Do[e*2+1]=8,e++,d[8]++;for(;e<=255;)Do[e*2+1]=9,e++,d[9]++;for(;e<=279;)Do[e*2+1]=7,e++,d[7]++;for(;e<=287;)Do[e*2+1]=8,e++,d[8]++;So(Do,287,d);for(e=0;e<30;e++)Eo[e*2+1]=5,Eo[e*2]=Ro(e,5);Ko=new Jo(Do,zo,257,286,15);Lo=new Jo(Eo,
-Ao,0,30,15);Mo=new Jo([],Bo,0,19,7);cp=!0}c.Lc=new No(c.ta,Ko);c.Gc=new No(c.nb,Lo);c.Nd=new No(c.ja,Mo);c.pa=0;c.ia=0;To(c);c=0}else c=ep(b,-2);c===0&&(b=b.state,b.Ge=2*b.ma,fp(b.head),b.ud=qp[b.level].Nf,b.Ud=qp[b.level].yf,b.ce=qp[b.level].Tf,b.Zd=qp[b.level].Mf,b.v=0,b.xa=0,b.F=0,b.la=0,b.U=b.ya=2,b.sb=0,b.S=0);b=c}}else b=-2;if(b!==0)throw Error(xo[b]);a.header&&(b=this.R)&&b.state&&b.state.wrap===2&&(b.state.I=a.header);if(a.dictionary){var l;typeof a.dictionary==="string"?l=qo(a.dictionary):
-up.call(a.dictionary)==="[object ArrayBuffer]"?l=new Uint8Array(a.dictionary):l=a.dictionary;a=this.R;f=l;g=f.length;if(a&&a.state)if(l=a.state,b=l.wrap,b===2||b===1&&l.status!==42||l.F)b=-2;else{b===1&&(a.K=ro(a.K,f,g,0));l.wrap=0;g>=l.ma&&(b===0&&(fp(l.head),l.v=0,l.xa=0,l.la=0),c=new P.yb(l.ma),P.Bb(c,f,g-l.ma,l.ma,0),f=c,g=l.ma);c=a.oa;d=a.ub;e=a.input;a.oa=g;a.ub=0;a.input=f;for(kp(l);l.F>=3;){f=l.v;g=l.F-2;do l.S=(l.S<<l.Qa^l.window[f+3-1])&l.Pa,l.La[f&l.kb]=l.head[l.S],l.head[l.S]=f,f++;while(--g);
+Ao,0,30,15);Mo=new Jo([],Bo,0,19,7);cp=!0}c.Lc=new No(c.ta,Ko);c.Gc=new No(c.nb,Lo);c.Nd=new No(c.ja,Mo);c.pa=0;c.ia=0;To(c);c=0}else c=ep(b,-2);c===0&&(b=b.state,b.Ge=2*b.ma,fp(b.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->),b.ud=qp[b.level].Nf,b.Ud=qp[b.level].yf,b.ce=qp[b.level].Tf,b.Zd=qp[b.level].Mf,b.v=0,b.xa=0,b.F=0,b.la=0,b.U=b.ya=2,b.sb=0,b.S=0);b=c}}else b=-2;if(b!==0)throw Error(xo[b]);a.header&&(b=this.R)&&b.state&&b.state.wrap===2&&(b.state.I=a.header);if(a.dictionary){var l;typeof a.dictionary==="string"?l=qo(a.dictionary):
+up.call(a.dictionary)==="[object ArrayBuffer]"?l=new Uint8Array(a.dictionary):l=a.dictionary;a=this.R;f=l;g=f.length;if(a&&a.state)if(l=a.state,b=l.wrap,b===2||b===1&&l.status!==42||l.F)b=-2;else{b===1&&(a.K=ro(a.K,f,g,0));l.wrap=0;g>=l.ma&&(b===0&&(fp(l.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->),l.v=0,l.xa=0,l.la=0),c=new P.yb(l.ma),P.Bb(c,f,g-l.ma,l.ma,0),f=c,g=l.ma);c=a.oa;d=a.ub;e=a.input;a.oa=g;a.ub=0;a.input=f;for(kp(l);l.F>=3;){f=l.v;g=l.F-2;do l.S=(l.S<<l.Qa^l.window[f+3-1])&l.Pa,l.La[f&l.kb]=l.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[l.S],l.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->[l.S]=f,f++;while(--g);
 l.v=f;l.F=2;kp(l)}l.v+=l.F;l.xa=l.v;l.la=l.F;l.F=0;l.U=l.ya=2;l.sb=0;a.ub=d;a.input=e;a.oa=c;l.wrap=b;b=0}else b=-2;if(b!==0)throw Error(xo[b]);this.Li=!0}}
 vp.prototype.push=function(a,b){var c=this.R,d=this.options.chunkSize;if(this.ended)return!1;var e=b===~~b?b:b===!0?4:0;typeof a==="string"?c.input=qo(a):up.call(a)==="[object ArrayBuffer]"?c.input=new Uint8Array(a):c.input=a;c.ub=0;c.oa=c.input.length;do{c.T===0&&(c.output=new P.yb(d),c.Mb=0,c.T=d);a=sp(c,e);if(a!==1&&a!==0)return wp(this,a),this.ended=!0,!1;if(c.T===0||c.oa===0&&(e===4||e===2))if(this.options.to==="string"){var f=P.Dd(c.output,c.Mb);b=f;f=f.length;if(f<65537&&(b.subarray&&po||!b.subarray))b=
 String.fromCharCode.apply(null,P.Dd(b,f));else{for(var g="",h=0;h<f;h++)g+=String.fromCharCode(b[h]);b=g}this.chunks.push(b)}else b=P.Dd(c.output,c.Mb),this.chunks.push(b)}while((c.oa>0||c.T===0)&&a!==1);if(e===4)return(c=this.R)&&c.state?(d=c.state.status,d!==42&&d!==69&&d!==73&&d!==91&&d!==103&&d!==113&&d!==666?a=ep(c,-2):(c.state=null,a=d===113?ep(c,-3):0)):a=-2,wp(this,a),this.ended=!0,a===0;e===2&&(wp(this,0),c.T=0);return!0};
@@ -1210,9 +1378,9 @@ function Dq(){var a=Bq("html5_web_po_experiment_ids");return Array.isArray(a)?Ub
 function Eq(a){a=Bq(a);return a!==void 0?String(a):""}
 function Bq(a){return S("EXPERIMENT_FLAGS",{})[a]}
 function Fq(){for(var a=[],b=S("EXPERIMENTS_FORCED_FLAGS",{}),c=y(Object.keys(b)),d=c.next();!d.done;d=c.next())d=d.value,a.push({key:d,value:String(b[d])});c=S("EXPERIMENT_FLAGS",{});d=y(Object.keys(c));for(var e=d.next();!e.done;e=d.next())e=e.value,e.startsWith("force_")&&b[e]===void 0&&a.push({key:e,value:String(c[e])});return a}
-;var Gq={Authorization:"AUTHORIZATION","X-Goog-EOM-Visitor-Id":"EOM_VISITOR_DATA","X-Goog-Visitor-Id":"SANDBOXED_VISITOR_ID","X-Youtube-Domain-Admin-State":"DOMAIN_ADMIN_STATE","X-Youtube-Chrome-Connected":"CHROME_CONNECTED_HEADER","X-YouTube-Client-Name":"INNERTUBE_CONTEXT_CLIENT_NAME","X-YouTube-Client-Version":"INNERTUBE_CONTEXT_CLIENT_VERSION","X-YouTube-Delegation-Context":"INNERTUBE_CONTEXT_SERIALIZED_DELEGATION_CONTEXT","X-YouTube-Device":"DEVICE","X-Youtube-Identity-Token":"ID_TOKEN","X-YouTube-Page-CL":"PAGE_CL",
+;var Gq={Authorization:"AUTHORIZATION","X-Goog-EOM-Visitor-Id":"EOM_VISITOR_DATA","X-Goog-Visitor-Id":"SANDBOXED_VISITOR_ID","X-Youtube-Domain-Admin-State":"DOMAIN_ADMIN_STATE","X-Youtube-Chrome-Connected":"CHROME_CONNECTED_header","X-YouTube-Client-Name":"INNERTUBE_CONTEXT_CLIENT_NAME","X-YouTube-Client-Version":"INNERTUBE_CONTEXT_CLIENT_VERSION","X-YouTube-Delegation-Context":"INNERTUBE_CONTEXT_SERIALIZED_DELEGATION_CONTEXT","X-YouTube-Device":"DEVICE","X-Youtube-Identity-Token":"ID_TOKEN","X-YouTube-Page-CL":"PAGE_CL",
 "X-YouTube-Page-Label":"PAGE_BUILD_LABEL","X-Goog-AuthUser":"SESSION_INDEX","X-Goog-PageId":"DELEGATED_SESSION_ID"},Hq="app debugcss debugjs expflag force_ad_params force_ad_encrypted force_viral_ad_response_params forced_experiments innertube_snapshots innertube_goldens internalcountrycode internalipoverride absolute_experiments conditional_experiments sbb sr_bns_address".split(" ").concat(A(Aq)),Iq=!1;function Jq(a,b,c,d,e,f,g,h,k){function l(){(m&&"readyState"in m?m.readyState:0)===4&&b&&fq(b)(m)}
-c=c===void 0?"GET":c;d=d===void 0?"":d;h=h===void 0?!1:h;var m=wq();if(!m)return null;"onloadend"in m?m.addEventListener("loadend",l,!1):m.onreadystatechange=l;T("debug_forward_web_query_parameters")&&(a=Kq(a));m.open(c,a,!0);f&&(m.responseType=f);g&&(m.withCredentials=!0);c=c==="POST"&&(window.FormData===void 0||!(d instanceof FormData));if(e=Lq(a,e))for(var n in e)m.setRequestHeader(n,e[n]),"content-type"===n.toLowerCase()&&(c=!1);c&&m.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+c=c===void 0?"GET":c;d=d===void 0?"":d;h=h===void 0?!1:h;var m=wq();if(!m)return null;"onloadend"in m?m.addEventListener("loadend",l,!1):m.onreadystatechange=l;T("debug_forward_web_query_parameters")&&(a=Kq(a));m.open(c,a,!0);f&&(m.responseType=f);g&&(m.withCredentials=!0);c=c==="POST"&&(window.FormData===void 0||!(d instanceof FormData));if(e=Lq(a,e))for(var n in e)m.setRequestheader(n,e[n]),"content-type"===n.toLowerCase()&&(c=!1);c&&m.setRequestheader("Content-Type","application/x-www-form-urlencoded");
 k&&"onprogress"in m&&(m.onprogress=function(){k(m.responseText)});
 if(h&&"setAttributionReporting"in XMLHttpRequest.prototype){a={eventSourceEligible:!0,triggerEligible:!1};try{m.setAttributionReporting(a)}catch(r){hq(r)}}m.send(d);return m}
 function Lq(a,b){b=b===void 0?{}:b;var c=sq(a),d=S("INNERTUBE_CLIENT_NAME"),e=T("web_ajax_ignore_global_headers_if_set"),f;for(f in Gq){var g=S(Gq[f]),h=f==="X-Goog-AuthUser"||f==="X-Goog-PageId";f!=="X-Goog-Visitor-Id"||g||(g=S("VISITOR_DATA"));var k;if(!(k=!g)){if(!(k=c||(lc(a)?!1:!0))){k=a;var l;if(l=T("add_auth_headers_to_remarketing_google_dot_com_ping")&&f==="Authorization"&&(d==="TVHTML5"||d==="TVHTML5_UNPLUGGED"||d==="TVHTML5_SIMPLY"))l=lc(k),l=l!==null?l.split(".").reverse():null,l=l===null?
@@ -1224,7 +1392,7 @@ d=b.timeout||0;if(b.onTimeout&&d>0){var g=b.onTimeout;var h=zq(function(){e||(e=
 function Oq(a,b){b.includeDomain&&(a=document.location.protocol+"//"+document.location.hostname+(document.location.port?":"+document.location.port:"")+a);var c=S("XSRF_FIELD_NAME");if(b=b.urlParams)b[c]&&delete b[c],a=qq(a,b);return a}
 function Pq(a,b){var c=S("XSRF_FIELD_NAME"),d=S("XSRF_TOKEN"),e=b.postBody||"",f=b.postParams,g=S("XSRF_FIELD_NAME"),h;b.headers&&(h=b.headers["Content-Type"]);b.excludeXsrf||lc(a)&&!b.withCredentials&&lc(a)!==document.location.hostname||b.method!=="POST"||h&&h!=="application/x-www-form-urlencoded"||b.postParams&&b.postParams[g]||(f||(f={}),f[c]=d);(T("ajax_parse_query_data_only_when_filled")&&f&&Object.keys(f).length>0||f)&&typeof e==="string"&&(e=oq(e),Ni(e,f),e=b.postBodyFormat&&b.postBodyFormat===
 "JSON"?JSON.stringify(e):rc(e));f=e||f&&!Gi(f);!Iq&&f&&b.method!=="POST"&&(Iq=!0,gq(Error("AJAX request with postData should use POST")));return e}
-function Rq(a,b,c,d){var e=null;switch(b){case "JSON":try{var f=c.responseText}catch(g){throw d=Error("Error reading responseText"),d.params=a,hq(d),g;}a=c.getResponseHeader("Content-Type")||"";f&&a.indexOf("json")>=0&&(f.substring(0,5)===")]}'\n"&&(f=f.substring(5)),e=JSON.parse(f));break;case "XML":if(a=(a=c.responseXML)?Tq(a):null)e={},Sb(a.getElementsByTagName("*"),function(g){e[g.tagName]=Uq(g)})}d&&Vq(e);
+function Rq(a,b,c,d){var e=null;switch(b){case "JSON":try{var f=c.responseText}catch(g){throw d=Error("Error reading responseText"),d.params=a,hq(d),g;}a=c.getResponseheader("Content-Type")||"";f&&a.indexOf("json")>=0&&(f.substring(0,5)===")]}'\n"&&(f=f.substring(5)),e=JSON.parse(f));break;case "XML":if(a=(a=c.responseXML)?Tq(a):null)e={},Sb(a.getElementsByTagName("*"),function(g){e[g.tagName]=Uq(g)})}d&&Vq(e);
 return e}
 function Vq(a){if(Oa(a))for(var b in a){var c;(c=b==="html_content")||(c=b.length-5,c=c>=0&&b.indexOf("_html",c)==c);if(c){c=a[b];var d=nb();c=d?d.createHTML(c):c;a[b]=new Fb(c)}else Vq(a[b])}}
 function Sq(a,b,c){if(b&&b.status===204)return!0;switch(a){case "JSON":return!!c;case "XML":return Number(c&&c.return_code)===0;case "RAW":return!0;default:return!!c}}
@@ -1484,7 +1652,7 @@ function nu(a,b,c){var d,e,f;return B(function(g){switch(g.h){case 1:if(!T("star
 function ou(a,b,c){var d,e,f,g;return B(function(h){if(h.h==1){if(!T("start_client_gcf"))return h.A(0);a.coldHashData=b;E("yt.gcf.config.coldHashData",a.coldHashData||null);return(d=Ot())?c?h.A(4):h.yield(iu(d),5):h.A(0)}h.h!=4&&(e=h.i,c=(f=e)==null?void 0:f.config);if(!c)return h.A(0);g=c.configData;return h.yield(hu(c,b,g,d),0)})}
 function pu(){if(!lu.instance){var a=new lu;lu.instance=a}a=lu.instance;var b=W()-a.h;if(!(a.h!==0&&b<Cq("send_config_hash_timer"))){b=F("yt.gcf.config.coldConfigData");var c=F("yt.gcf.config.hotHashData"),d=F("yt.gcf.config.coldHashData");b&&c&&d&&(a.h=W());return{coldConfigData:b,hotHashData:c,coldHashData:d}}}
 lu.prototype.o=function(a){this.hotHashData=a;E("yt.gcf.config.hotHashData",this.hotHashData||null)};function qu(){return"INNERTUBE_API_KEY"in aq&&"INNERTUBE_API_VERSION"in aq}
-function ru(){return{innertubeApiKey:S("INNERTUBE_API_KEY"),innertubeApiVersion:S("INNERTUBE_API_VERSION"),Bf:S("INNERTUBE_CONTEXT_CLIENT_CONFIG_INFO"),Xd:S("INNERTUBE_CONTEXT_CLIENT_NAME","WEB"),Vi:S("INNERTUBE_CONTEXT_CLIENT_NAME",1),innertubeContextClientVersion:S("INNERTUBE_CONTEXT_CLIENT_VERSION"),Df:S("INNERTUBE_CONTEXT_HL"),Cf:S("INNERTUBE_CONTEXT_GL"),Ef:S("INNERTUBE_HOST_OVERRIDE")||"",Ff:!!S("INNERTUBE_USE_THIRD_PARTY_AUTH",!1),Wi:!!S("INNERTUBE_OMIT_API_KEY_WHEN_AUTH_HEADER_IS_PRESENT",
+function ru(){return{innertubeApiKey:S("INNERTUBE_API_KEY"),innertubeApiVersion:S("INNERTUBE_API_VERSION"),Bf:S("INNERTUBE_CONTEXT_CLIENT_CONFIG_INFO"),Xd:S("INNERTUBE_CONTEXT_CLIENT_NAME","WEB"),Vi:S("INNERTUBE_CONTEXT_CLIENT_NAME",1),innertubeContextClientVersion:S("INNERTUBE_CONTEXT_CLIENT_VERSION"),Df:S("INNERTUBE_CONTEXT_HL"),Cf:S("INNERTUBE_CONTEXT_GL"),Ef:S("INNERTUBE_HOST_OVERRIDE")||"",Ff:!!S("INNERTUBE_USE_THIRD_PARTY_AUTH",!1),Wi:!!S("INNERTUBE_OMIT_API_KEY_WHEN_AUTH_header_IS_PRESENT",
 !1),appInstallData:S("SERIALIZED_CLIENT_CONFIG_DATA")}}
 function su(a){var b={client:{hl:a.Df,gl:a.Cf,clientName:a.Xd,clientVersion:a.innertubeContextClientVersion,configInfo:a.Bf}};navigator.userAgent&&(b.client.userAgent=String(navigator.userAgent));var c=D.devicePixelRatio;c&&c!=1&&(b.client.screenDensityFloat=String(c));c=S("EXPERIMENTS_TOKEN","");c!==""&&(b.client.experimentsToken=c);c=Fq();c.length>0&&(b.request={internalExperimentFlags:c});c=a.Xd;if((c==="WEB"||c==="MWEB"||c===1||c===2)&&b){var d;b.client.mainAppWebInfo=(d=b.client.mainAppWebInfo)!=
 null?d:{};b.client.mainAppWebInfo.webDisplayMode=kr()}(d=F("yt.embedded_player.embed_url"))&&b&&(b.thirdParty={embedUrl:d});var e;if(T("web_log_memory_total_kbytes")&&((e=D.navigator)==null?0:e.deviceMemory)){var f;e=(f=D.navigator)==null?void 0:f.deviceMemory;b&&(b.client.memoryTotalKbytes=""+e*1E6)}a.appInstallData&&b&&(b.client.configInfo=b.client.configInfo||{},b.client.configInfo.appInstallData=a.appInstallData);(a=Dr())&&b&&(b.client.connectionType=a);T("web_log_effective_connection_type")&&
@@ -1567,7 +1735,7 @@ function Lv(){B(function(a){return a.yield(Zt(),0)})}
 function Fv(a){T("nwl_csi_killswitch")||Lu("networkless_performance",a,{sampleRate:1})}
 ;var Mv={accountStateChangeSignedIn:23,accountStateChangeSignedOut:24,delayedEventMetricCaptured:11,latencyActionBaselined:6,latencyActionInfo:7,latencyActionTicked:5,offlineTransferStatusChanged:2,offlineImageDownload:335,playbackStartStateChanged:9,systemHealthCaptured:3,mangoOnboardingCompleted:10,mangoPushNotificationReceived:230,mangoUnforkDbMigrationError:121,mangoUnforkDbMigrationSummary:122,mangoUnforkDbMigrationPreunforkDbVersionNumber:133,mangoUnforkDbMigrationPhoneMetadata:134,mangoUnforkDbMigrationPhoneStorage:135,
 mangoUnforkDbMigrationStep:142,mangoAsyncApiMigrationEvent:223,mangoDownloadVideoResult:224,mangoHomepageVideoCount:279,mangoHomeV3State:295,mangoImageClientCacheHitEvent:273,sdCardStatusChanged:98,framesDropped:12,thumbnailHovered:13,deviceRetentionInfoCaptured:14,thumbnailLoaded:15,backToAppEvent:318,streamingStatsCaptured:17,offlineVideoShared:19,appCrashed:20,youThere:21,offlineStateSnapshot:22,mdxSessionStarted:25,mdxSessionConnected:26,mdxSessionDisconnected:27,bedrockResourceConsumptionSnapshot:28,
-nextGenWatchWatchSwiped:29,kidsAccountsSnapshot:30,zeroStepChannelCreated:31,tvhtml5SearchCompleted:32,offlineSharePairing:34,offlineShareUnlock:35,mdxRouteDistributionSnapshot:36,bedrockRepetitiveActionTimed:37,unpluggedDegradationInfo:229,uploadMp4HeaderMoved:38,uploadVideoTranscoded:39,uploadProcessorStarted:46,uploadProcessorEnded:47,uploadProcessorReady:94,uploadProcessorRequirementPending:95,uploadProcessorInterrupted:96,uploadFrontendEvent:241,assetPackDownloadStarted:41,assetPackDownloaded:42,
+nextGenWatchWatchSwiped:29,kidsAccountsSnapshot:30,zeroStepChannelCreated:31,tvhtml5SearchCompleted:32,offlineSharePairing:34,offlineShareUnlock:35,mdxRouteDistributionSnapshot:36,bedrockRepetitiveActionTimed:37,unpluggedDegradationInfo:229,uploadMp4headerMoved:38,uploadVideoTranscoded:39,uploadProcessorStarted:46,uploadProcessorEnded:47,uploadProcessorReady:94,uploadProcessorRequirementPending:95,uploadProcessorInterrupted:96,uploadFrontendEvent:241,assetPackDownloadStarted:41,assetPackDownloaded:42,
 assetPackApplied:43,assetPackDeleted:44,appInstallAttributionEvent:459,playbackSessionStopped:45,adBlockerMessagingShown:48,distributionChannelCaptured:49,dataPlanCpidRequested:51,detailedNetworkTypeCaptured:52,sendStateUpdated:53,receiveStateUpdated:54,sendDebugStateUpdated:55,receiveDebugStateUpdated:56,kidsErrored:57,mdxMsnSessionStatsFinished:58,appSettingsCaptured:59,mdxWebSocketServerHttpError:60,mdxWebSocketServer:61,startupCrashesDetected:62,coldStartInfo:435,offlinePlaybackStarted:63,liveChatMessageSent:225,
 liveChatUserPresent:434,liveChatBeingModerated:457,liveCreationCameraUpdated:64,liveCreationEncodingCaptured:65,liveCreationError:66,liveCreationHealthUpdated:67,liveCreationVideoEffectsCaptured:68,liveCreationStageOccured:75,liveCreationBroadcastScheduled:123,liveCreationArchiveReplacement:149,liveCreationCostreamingConnection:421,liveCreationStreamWebrtcStats:288,liveCreationWebrtcError:526,mdxSessionRecoveryStarted:69,mdxSessionRecoveryCompleted:70,mdxSessionRecoveryStopped:71,visualElementShown:72,
 visualElementHidden:73,visualElementGestured:78,visualElementStateChanged:208,screenCreated:156,playbackAssociated:202,visualElementAttached:215,playbackContextEvent:214,cloudCastingPlaybackStarted:74,webPlayerApiCalled:76,tvhtml5AccountDialogOpened:79,foregroundHeartbeat:80,foregroundHeartbeatScreenAssociated:111,kidsOfflineSnapshot:81,mdxEncryptionSessionStatsFinished:82,playerRequestCompleted:83,liteSchedulerStatistics:84,mdxSignIn:85,spacecastMetadataLookupRequested:86,spacecastBatchLookupRequested:87,
@@ -1854,11 +2022,23 @@ function yz(a,b){a&&b&&(a=""+Pa(b),(a=zz[a])&&Mw(a))}
 function vz(a,b,c){c=c===void 0?null:c;var d=xz(typeof a==="string"?a:a.toString()),e=document.getElementById(d),f=e&&hz(e),g=e&&!f;f?b&&b():(b&&(f=Kw(d,b),b=""+Pa(b),zz[b]=f),g||(e=Az(a,d,function(){hz(e)||(fz(e),Nw(d),zq(function(){Ow(d)},0))},c)))}
 function Az(a,b,c,d){d=d===void 0?null:d;var e=Ri("SCRIPT");e.id=b;e.onload=function(){c&&setTimeout(c,0)};
 e.onreadystatechange=function(){switch(e.readyState){case "loaded":case "complete":e.onload()}};
-d&&e.setAttribute("nonce",d);Lb(e,typeof a==="string"?Ap(a):a);a=document.getElementsByTagName("head")[0]||document.body;a.insertBefore(e,a.firstChild);return e}
+d&&e.setAttribute("nonce",d);Lb(e,typeof a==="string"?Ap(a):a);a=document.getElementsByTagName("<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->")[0]||document.body;a.insertBefore(e,a.firstChild);return e}
 function xz(a){var b=document.createElement("a");Db(b,a);a=b.href.replace(/^[a-zA-Z]+:\/\//,"//");return"js-"+hc(a)}
 var zz={};function Bz(a){var b=Cz(a),c=document.getElementById(b),d=c&&hz(c);d||c&&!d||(c=Dz(a,b,function(){if(!hz(c)){fz(c);Nw(b);var e=Ya(Ow,b);zq(e,0)}}))}
 function Dz(a,b,c){var d=document.createElement("link");d.id=b;d.onload=function(){c&&setTimeout(c,0)};
-a=Ap(a);Qb(d,a);(document.getElementsByTagName("head")[0]||document.body).appendChild(d);return d}
+a=Ap(a);Qb(d,a);(document.getElementsByTagName("<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->")[0]||document.body).appendChild(d);return d}
 function Cz(a){var b=Ri("A");Db(b,new wb(a));a=b.href.replace(/^[a-zA-Z]+:\/\//,"//");return"css-"+hc(a)}
 ;function Ez(a){var b=C.apply(1,arguments);if(!Fz(a)||b.some(function(d){return!Fz(d)}))throw Error("Only objects may be merged.");
 b=y(b);for(var c=b.next();!c.done;c=b.next())Gz(a,c.value)}
@@ -2047,7 +2227,7 @@ break a}catch(ja){}l=void 0}l&&(e.timeZone=l)}(l=S("EXPERIMENTS_TOKEN",""))?e.ex
 !0);T("warm_op_csn_cleanup")?c&&(b=Iy())&&(d.clientScreenNonce=b):!b&&(b=Iy())&&(d.clientScreenNonce=b);a&&(d.clickTracking={clickTrackingParams:a});if(a=F("yt.mdx.remote.remoteClient_"))d.remoteClient=a;$B().setLocationOnInnerTubeContext(d);try{var m=tq(),n=m.bid;delete m.bid;d.adSignalsInfo={params:[],bid:n};for(var r=y(Object.entries(m)),t=r.next();!t.done;t=r.next()){var w=y(t.value),z=w.next().value,x=w.next().value;m=z;n=x;a=void 0;(a=d.adSignalsInfo.params)==null||a.push({key:m,value:""+n})}var H,
 G;if(((H=d.client)==null?void 0:H.clientName)==="TVHTML5"||((G=d.client)==null?void 0:G.clientName)==="TVHTML5_UNPLUGGED"){var V=S("INNERTUBE_CONTEXT");V.adSignalsInfo&&(d.adSignalsInfo.advertisingId=V.adSignalsInfo.advertisingId,d.adSignalsInfo.advertisingIdSignalType="DEVICE_ID_TYPE_CONNECTED_TV_IFA",d.adSignalsInfo.limitAdTracking=V.adSignalsInfo.limitAdTracking)}}catch(ja){oy(ja)}return d}
 ;function bC(a){var b={"Content-Type":"application/json"};S("EOM_VISITOR_DATA")?b["X-Goog-EOM-Visitor-Id"]=S("EOM_VISITOR_DATA"):S("VISITOR_DATA")&&(b["X-Goog-Visitor-Id"]=S("VISITOR_DATA"));b["X-Youtube-Bootstrap-Logged-In"]=S("LOGGED_IN",!1);S("DEBUG_SETTINGS_METADATA")&&(b["X-Debug-Settings-Metadata"]=S("DEBUG_SETTINGS_METADATA"));if(a!=="cors"){var c=S("INNERTUBE_CONTEXT_CLIENT_NAME");c&&(b["X-Youtube-Client-Name"]=c);(c=S("INNERTUBE_CONTEXT_CLIENT_VERSION"))&&(b["X-Youtube-Client-Version"]=c);
-(c=S("CHROME_CONNECTED_HEADER"))&&(b["X-Youtube-Chrome-Connected"]=c);(c=S("DOMAIN_ADMIN_STATE"))&&(b["X-Youtube-Domain-Admin-State"]=c)}S("SEND_LAVA_HEADER_UNCONDITIONALLY",!1)?(a=S("SERIALIZED_LAVA_DEVICE_CONTEXT"))&&(b["X-YouTube-Lava-Device-Context"]=a):a!=="cors"&&S("ENABLE_LAVA_HEADER_ON_IT_EXPANSION")&&(a=S("SERIALIZED_LAVA_DEVICE_CONTEXT"))&&(b["X-YouTube-Lava-Device-Context"]=a);return b}
+(c=S("CHROME_CONNECTED_header"))&&(b["X-Youtube-Chrome-Connected"]=c);(c=S("DOMAIN_ADMIN_STATE"))&&(b["X-Youtube-Domain-Admin-State"]=c)}S("SEND_LAVA_header_UNCONDITIONALLY",!1)?(a=S("SERIALIZED_LAVA_DEVICE_CONTEXT"))&&(b["X-YouTube-Lava-Device-Context"]=a):a!=="cors"&&S("ENABLE_LAVA_header_ON_IT_EXPANSION")&&(a=S("SERIALIZED_LAVA_DEVICE_CONTEXT"))&&(b["X-YouTube-Lava-Device-Context"]=a);return b}
 ;function cC(a){return function(){return new a}}
 ;function dC(){}
 dC.prototype.u=function(a,b,c){b=b===void 0?{}:b;c=c===void 0?nr:c;var d={context:aC(a.clickTrackingParams,!1,this.o)};var e=this.i(a);if(e){this.h(d,e,b);var f;b="/youtubei/v1/"+NB(this.j());(e=(f=xx(a.commandMetadata,Hp))==null?void 0:f.apiUrl)&&(b=e);f=Ty(Sy(b));a=Object.assign({},{command:a},void 0);d={input:f,hb:Uy(f),Ja:d,config:a};d.config.Yb?d.config.Yb.identity=c:d.config.Yb={identity:c};return d}c=new U("Error: Failed to create Request from Command.",a);oy(c)};
@@ -2122,7 +2302,7 @@ PC.prototype.getLatestChallengeResponse=function(){return this.i};
 function jm(a,b,c){var d,e,f,g;return B(function(h){if(h.h==1){rB();uB("att_fs",void 0,"attestation_challenge_fetch");if(!a.h)throw new cl(9,"Missing fetcher");return h.yield(a.h(b,c),2)}d=h.i;f=(e=d)==null?void 0:e.bgChallenge;if(!f)throw new cl(15,"Missing field");a.i=d;a.j.forEach(function(k){k(d)});
 g=pA(f);uB("att_fc",void 0,"attestation_challenge_fetch");sB();return h.return(g)})}
 function Sm(a,b){var c,d,e,f,g;return B(function(h){switch(h.h){case 1:c=new qj(100,3E5,.25,2),d=void 0;case 2:if(!(c.i<10)){h.A(4);break}xa(h,5);if(!(c.i>0)){h.A(7);break}return h.yield(OC(c.getValue()),7);case 7:return h.yield(QC(a,b),9);case 9:return e=h.i,h.return(e);case 5:f=za(h);f instanceof cl?d=f:(g=f instanceof Error?f.message:"Unknown",d=new cl(9,g));rj(c);h.A(2);break;case 4:if(d)throw d;throw new cl(9,"Unknown error");}})}
-function QC(a,b){b=Wl(Xl(new Vl,b),a.qc);var c=new Kl,d=a.u();d.open("POST",a.o);d.setRequestHeader("X-Goog-Api-Key","AIzaSyDyT5W0Jh49F30Pqqtyfdf7pDLFKLJoAnw");d.setRequestHeader("Content-Type","application/json+protobuf");d.onload=function(){if(xq(d)){var e=ln(d.responseText);c.resolve(e)}else c.reject(new cl(al(yq(d)),d.statusText))};
+function QC(a,b){b=Wl(Xl(new Vl,b),a.qc);var c=new Kl,d=a.u();d.open("POST",a.o);d.setRequestheader("X-Goog-Api-Key","AIzaSyDyT5W0Jh49F30Pqqtyfdf7pDLFKLJoAnw");d.setRequestheader("Content-Type","application/json+protobuf");d.onload=function(){if(xq(d)){var e=ln(d.responseText);c.resolve(e)}else c.reject(new cl(al(yq(d)),d.statusText))};
 d.onerror=function(){c.reject(new cl(al(yq(d)),d.statusText))};
 d.send(b.serialize());return c.promise}
 function RC(a){var b={bicf:function(f){a.h=f},
@@ -2147,7 +2327,19 @@ function YC(a){try{var b=JSON.parse(a);if(b.bgChallenge)return b}catch(c){}}
 function ZC(){var a=window,b={Qc:Promise.resolve(new bw)};a=a===void 0?window:a;var c=a.ytAtR,d;b==null||(d=b.Wd)==null||d.kj();if(c){if(c=YC(c)){var e;b==null||(e=b.Wd)==null||e.je("SUCCESS");XC(c,b)}a.ytAtR=void 0}else a.ytAtRC=function(f){if(f=YC(f)){var g;b==null||(g=b.Wd)==null||g.je("SUCCESS");XC(f,b);a.ytAtRC=void 0}}}
 ;var $C=["www.youtube-nocookie.com","www.youtubeeducation.com","youtube.googleapis.com"];function aD(){this.state=1;this.vm=null;this.h=void 0}
 p=aD.prototype;p.initialize=function(a,b,c,d){this.h=d;if(a.program){var e;d=(e=a.interpreterUrl)!=null?e:null;if(a.interpreterSafeScript)e=yp(a.interpreterSafeScript);else{var f;e=(f=a.interpreterScript)!=null?f:null}a.interpreterSafeUrl&&(d=zp(a.interpreterSafeUrl).toString());bD(this,e,d,a.program,b,c)}else py(Error("BL:CIP"))};
-function bD(a,b,c,d,e,f){var g=g===void 0?"trayride":g;c?(a.state=2,uz(Ap(c),function(){window[g]?cD(a,d,g,e):(a.state=3,wz(c),py(new U("BL:ULB",""+c)))},f)):b?(f=Ri("SCRIPT"),b instanceof Hb?(f.textContent=Jb(b),Kb(f)):f.textContent=b,f.nonce=Gb(document),document.head.appendChild(f),document.head.removeChild(f),window[g]?cD(a,d,g,e):(a.state=4,py(new U("BL:ULBJ")))):py(new U("BL:ULV"))}
+function bD(a,b,c,d,e,f){var g=g===void 0?"trayride":g;c?(a.state=2,uz(Ap(c),function(){window[g]?cD(a,d,g,e):(a.state=3,wz(c),py(new U("BL:ULB",""+c)))},f)):b?(f=Ri("SCRIPT"),b instanceof Hb?(f.textContent=Jb(b),Kb(f)):f.textContent=b,f.nonce=Gb(document),document.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->.appendChild(f),document.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->.removeChild(f),window[g]?cD(a,d,g,e):(a.state=4,py(new U("BL:ULBJ")))):py(new U("BL:ULV"))}
 p.isLoading=function(){return this.state===2};
 function cD(a,b,c,d){a.state=5;var e=!!a.h&&$C.includes(lc(a.h)||"");try{var f=new Ml({program:b,globalName:c,Lb:{disable:!T("att_web_record_metrics")||!T("att_skip_metrics_for_cookieless_domains_ks")&&e,qa:"aGIf"}});f.Pb.then(function(){a.state=6;d&&d(b)});
 a.Cd(f)}catch(g){a.state=7,g instanceof Error&&py(g)}}
@@ -2240,7 +2432,13 @@ p.ng=function(a,b){this.P||SD(this,a,TD(a,b))};
 p.removeListener=function(a,b){a in this.h&&(this.removeEventListener(a,this.h[a],b),delete this.h[a])};
 p.addEventListener=function(a,b,c){this.j?a==="onReady"?this.api.addEventListener(a,b):this.api.handleExternalCall("addEventListener",[a,b],c||null):this.api.addEventListener(a,b)};
 p.removeEventListener=function(a,b,c){this.j?a==="onReady"?this.api.removeEventListener(a,b):this.api.handleExternalCall("removeEventListener",[a,b],c||null):this.api.removeEventListener(a,b)};
-function UD(a,b){switch(a){case "loadVideoById":return[GD(b)];case "cueVideoById":return[GD(b)];case "loadVideoByPlayerVars":return[b];case "cueVideoByPlayerVars":return[b];case "loadPlaylist":return[HD(b)];case "cuePlaylist":return[HD(b)];case "seekTo":return[b.seconds,b.allowSeekAhead];case "playVideoAt":return[b.index];case "setVolume":return[b.volume];case "setPlaybackQuality":return[b.suggestedQuality];case "setPlaybackRate":return[b.suggestedRate];case "setLoop":return[b.loopPlaylists];case "setShuffle":return[b.shufflePlaylist];
+function UD(a,b){switch(a){case "loadVideoById":return[GD(b)];case "cueVideoById":return[GD(b)];case "loadVideoByPlayerVars":return[b];case "cueVideoByPlayerVars":return[b];case "loadPlaylist":return[HD(b)];case "cuePlaylist":return[HD(b)];case "seekTo":return[b.seconds,b.allowSeekA<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->];case "playVideoAt":return[b.index];case "setVolume":return[b.volume];case "setPlaybackQuality":return[b.suggestedQuality];case "setPlaybackRate":return[b.suggestedRate];case "setLoop":return[b.loopPlaylists];case "setShuffle":return[b.shufflePlaylist];
 case "getOptions":return[b.module];case "getOption":return[b.module,b.option];case "setOption":return[b.module,b.option,b.value];case "handleGlobalKeyDown":return[b.keyCode,b.shiftKey,b.ctrlKey,b.altKey,b.metaKey,b.key,b.code]}return[]}
 function VD(a,b){switch(a){case "isMuted":return{muted:b};case "getVolume":return{volume:b};case "getPlaybackRate":return{playbackRate:b};case "getAvailablePlaybackRates":return{availablePlaybackRates:b};case "getVideoLoadedFraction":return{videoLoadedFraction:b};case "getPlayerState":return{playerState:b};case "getCurrentTime":return{currentTime:b};case "getPlaybackQuality":return{playbackQuality:b};case "getAvailableQualityLevels":return{availableQualityLevels:b};case "getDuration":return{duration:b};
 case "getVideoUrl":return{videoUrl:b};case "getVideoEmbedCode":return{videoEmbedCode:b};case "getPlaylist":return{playlist:b};case "getPlaylistIndex":return{playlistIndex:b};case "getOptions":return{options:b};case "getOption":return{option:b}}}
@@ -2304,11 +2502,23 @@ function zE(a){if(!a.P){var b=F("yt.player.Application.create");try{a.api=b(a.co
 a.api.isReady=function(){return!0};
 a.h(a.api)}catch(d){throw a.Rc(),d;}}}
 xE.prototype.X=function(){this.api&&this.api.destroy();Si(this.container);J.prototype.X.call(this)};
-function BE(a){var b="ytp-"+a.toString();if(!document.getElementById(b)){var c=document.createElement("link");c.id=b;Qb(c,a);(document.getElementsByTagName("head")[0]||document.body).appendChild(c)}}
+function BE(a){var b="ytp-"+a.toString();if(!document.getElementById(b)){var c=document.createElement("link");c.id=b;Qb(c,a);(document.getElementsByTagName("<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->")[0]||document.body).appendChild(c)}}
 function AE(a,b,c){var d="ytp-"+a.toString(),e=document.getElementById(d);if(e)e.dataset.failed?c():e.dataset.loaded?b():(e.addEventListener("error",function(){c()}),e.addEventListener("load",function(){b()}));
 else{var f=document.createElement("script");f.id=d;f.addEventListener("error",function(){f.dataset.failed="true";c()});
 f.addEventListener("load",function(){f.dataset.loaded="true";b()});
-Lb(f,a);a=document.getElementsByTagName("head")[0]||document.body;a.insertBefore(f,a.firstChild)}}
+Lb(f,a);a=document.getElementsByTagName("<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->")[0]||document.body;a.insertBefore(f,a.firstChild)}}
 ;var CE=null,DE=null,EE;function FE(a){CE=a;CE.addEventListener("onVideoDataChange",GE);CE.addEventListener("onReady",HE);a=S("POST_MESSAGE_ID","player");var b=S("POST_MESSAGE_ORIGIN");S("ENABLE_JS_API")?DE=new ID(CE,EE):S("ENABLE_POST_API")&&typeof a==="string"&&typeof b==="string"&&(DE=new QD(CE,a,b));EE=void 0}
 function IE(){yA();T("ytidb_create_logger_embed_killswitch")||ws();var a={};pD.h||(pD.h=new pD);pD.h.install((a.flush_logs={callback:function(){Tx()}},a));
 nw();BD();T("ytidb_clear_embedded_player")&&qn.ra(function(){NC()});

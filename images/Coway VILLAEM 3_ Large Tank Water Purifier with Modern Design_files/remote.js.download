@@ -303,7 +303,13 @@ g.lE(Lb(p.j,"/pairing/get_lounge_token_batch"),S)},lda=function(p,a,l,y,S){funct
 l=l===void 0?function(){return""}:l;
 return g.oO("enable_mdx_web_channel_desktop")?new pTK(function(){return new ZWc(Lb(p,"/wc"),a,l)}):new oK7(n,S)},k2W=function(p){var a={};
 a.index=p.index;a.listId=p.listId;a.videoId=p.videoId;a.playerState=p.playerState;a.volume=p.volume;a.muted=p.muted;a.audioTrackId=p.audioTrackId;a.trackData=g.OV(p.trackData);a.hasPrevious=p.NR;a.hasNext=p.nO;a.playerTime=p.G;a.playerTimeAt=p.W;a.seekableStart=p.S;a.seekableEnd=p.K;a.duration=p.U;a.loadedTime=p.Z;a.liveIngestionTime=p.L;return a},QMb=function(p,a,l){var y=document.createElement("script");
-y.onerror=a;l&&(y.onload=l);g.oQ(y,g.Pt(p));(document.head||document.documentElement).appendChild(y)},dI=function(p,a){g.qu.call(this);
+y.onerror=a;l&&(y.onload=l);g.oQ(y,g.Pt(p));(document.<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->||document.documentElement).appendChild(y)},dI=function(p,a){g.qu.call(this);
 var l=this;this.U=0;this.j=p;this.G=[];this.W=new ie7;this.S=this.L=null;this.Sl=(0,g.bn)(this.som,this);this.K=(0,g.bn)(this.sN,this);this.Z=(0,g.bn)(this.lNT,this);this.UO=(0,g.bn)(this.Hx7,this);var y=0;p?(y=p.getProxyState(),y!=3&&(p.subscribe("proxyStateChange",this.FZ,this),JsU(this))):y=3;y!=0&&(a?this.FZ(y):g.aY(function(){l.FZ(y)},0));
 (p=GI2())&&z8(this,p);this.subscribe("yt-remote-cast2-session-change",this.UO)},wc=function(p,a){Kb()?eL().setConnectedScreenStatus(p,a):i2("setConnectedScreenStatus called before ready.")},vQ2=function(p){var a=Po();
 fM(null);p||sUc("");g.M8("yt.mdx.remote.connection_",p);hH&&(g.Bf(hH,function(l){l(p)}),hH.length=0);
@@ -701,7 +707,19 @@ g.L.HW=function(){return this.L.HW()};
 g.L.Mb=function(){return this.L.Mb()};
 g.L.Gd=function(){return this.L.Gd()};
 g.L.getPlayerState=function(){return this.L.qe};
-g.L.isAtLiveHead=function(){return this.L.isAtLiveHead()};
+g.L.isAtLive<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->=function(){return this.L.isAtLive<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->()};
 g.L.pauseVideo=function(){this.L.ri("control_pause")};
 g.L.playVideo=function(){var p=this;return g.R(function(a){p.L.ri("control_play");return a.return()})};
 g.L.seekTo=function(p,a){this.L.ri("control_seek",p,!(a==null?0:a.eI))};
@@ -729,8 +747,26 @@ g.L.d$=function(){var p=rZ(this.Nc);return p.j?p.L+pM(p):p.L};
 g.L.HW=function(){return rZ(this.Nc).Z};
 g.L.Mb=function(){return SsM(rZ(this.Nc))};
 g.L.Gd=function(){var p=rZ(this.Nc);return p.S>0?p.S+pM(p):p.S};
-g.L.getProgressState=function(){var p=rZ(this.Nc),a=this.player.getVideoData();return{airingStart:0,airingEnd:0,allowSeeking:p.playerState!=1081&&this.player.NA(),clipEnd:a.clipEnd,clipStart:a.clipStart,current:this.getCurrentTime(),displayedStart:-1,duration:this.getDuration(),ingestionTime:this.d$(),isAtLiveHead:this.isAtLiveHead(),loaded:this.HW(),seekableEnd:this.Mb(),seekableStart:this.Gd(),offset:0,viewerLivestreamJoinMediaTime:0}};
-g.L.isAtLiveHead=function(){return SsM(rZ(this.Nc))-this.getCurrentTime()<=1};
+g.L.getProgressState=function(){var p=rZ(this.Nc),a=this.player.getVideoData();return{airingStart:0,airingEnd:0,allowSeeking:p.playerState!=1081&&this.player.NA(),clipEnd:a.clipEnd,clipStart:a.clipStart,current:this.getCurrentTime(),displayedStart:-1,duration:this.getDuration(),ingestionTime:this.d$(),isAtLive<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->:this.isAtLive<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->(),loaded:this.HW(),seekableEnd:this.Mb(),seekableStart:this.Gd(),offset:0,viewerLivestreamJoinMediaTime:0}};
+g.L.isAtLive<head>
+     <!-- SEO Meta Tags -->
+    <meta name="description" content="探索Coway的创新产品，包括空气净化器、净水器等，为您和您的家人带来更健康、更舒适的生活。">
+    <meta name="keywords" content="Coway, 空气净化器, 净水器, 健康家电, 马来西亚, 租赁, 买断, water filter, air purifier, fitration">
+    <link rel="canonical" href="https://dreamcreatorr.github.io/Coway/index.html"> <!-- 请将 'your-coway-site.com' 替换为您的实际域名 -->
+    <link rel="icon" href="images/coway-malaysia.ico" type="image/x-icon"> <!-- 假设您的favicon在images文件夹下 -->
+    <!-- End SEO Meta Tags -->=function(){return SsM(rZ(this.Nc))-this.getCurrentTime()<=1};
 g.L.nextVideo=function(){this.Nc&&this.Nc.nextVideo()};
 g.L.lY=function(){this.Nc&&this.Nc.lY()};
 g.L.bxT=function(p){p===1&&(this.hR=this.Nc?rZ(this.Nc):null)};
