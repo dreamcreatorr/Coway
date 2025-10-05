@@ -216,7 +216,7 @@ img {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: var(--dark-color);
+    background-color: #212529c7;
     transition: all 0.3s ease-in-out;
 }
 
