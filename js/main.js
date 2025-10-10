@@ -98,34 +98,36 @@ function initializeheaderScripts() {
     // 移动端菜单链接点击事件处理
     function handleMenuLinkClick(event) {
         const clickedLink = event.currentTarget;
-        const parentItem = clickedLink.parentElement;
+        const parentItem = clickedLink.closest('.dropdown');
 
         // 检查被点击的链接是否是用于展开下拉菜单的
-        const isDropdownToggle = parentItem.classList.contains('dropdown');
+        const isDropdownToggle = parentItem && navMenu.contains(parentItem);
 
         if (isDropdownToggle) {
             // 仅在移动端视图下阻止链接的默认跳转行为，以实现手风琴效果
             // window.innerWidth <= 768 匹配 CSS 中的响应式断点
             if (window.innerWidth <= 768) {
                 event.preventDefault(); // 在移动端，阻止链接跳转，仅展开菜单
+
+                // 手风琴效果：在展开当前菜单前，关闭其他所有已展开的菜单
+                const allDropdowns = navMenu.querySelectorAll('.dropdown');
+                allDropdowns.forEach(dropdown => {
+                    if (dropdown !== parentItem) {
+                        dropdown.classList.remove('open');
+                        // 更新其他下拉菜单的 ARIA 状态
+                        const otherLink = dropdown.querySelector('.nav-link');
+                        if (otherLink) otherLink.setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // 切换当前点击菜单的展开/收起状态
+                const isOpening = parentItem.classList.toggle('open');
+                // 更新当前下拉菜单的 ARIA 状态
+                clickedLink.setAttribute('aria-expanded', isOpening);
             } else {
-                return; // 在桌面端，不阻止事件，允许链接正常跳转
+                // 在桌面端，不阻止事件，允许链接正常跳转
+                return; 
             }
-
-            // 手风琴效果：在展开当前菜单前，关闭其他所有已展开的菜单
-            const allDropdowns = navMenu.querySelectorAll('.dropdown');
-            allDropdowns.forEach(dropdown => {
-                if (dropdown !== parentItem) {
-                    dropdown.classList.remove('open');
-                    // 更新其他下拉菜单的 ARIA 状态
-                    dropdown.querySelector('.nav-link').setAttribute('aria-expanded', 'false');
-                }
-            });
-
-            // 切换当前点击菜单的展开/收起状态
-            const isOpening = parentItem.classList.toggle('open');
-            // 更新当前下拉菜单的 ARIA 状态
-            clickedLink.setAttribute('aria-expanded', isOpening);
         } else {
             // 如果是普通链接（非下拉菜单触发器），则关闭整个导航
             closeMenu();
@@ -250,6 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeImageGallery(); // 新增：初始化图片画廊
     setupWhatsAppButton(); // 新增：设置 WhatsApp 按钮
 });
+initializeVideoPlayer(); // 新增：初始化视频播放器
 
 // --- 产品详情页动态加载逻辑 ---
 async function loadProductDetails() {
@@ -415,4 +418,23 @@ function setupWhatsAppButton() {
 
     // 2. 将按钮添加到页面中
     document.body.appendChild(whatsAppButton);
+}
+
+// --- 视频播放器逻辑 ---
+function initializeVideoPlayer() {
+    const videoContainer = document.querySelector('.video-container');
+    if (!videoContainer) return;
+
+    const video = videoContainer.querySelector('video');
+    const playButton = videoContainer.querySelector('.play-button-overlay');
+
+    if (!video || !playButton) return;
+
+    video.addEventListener('play', () => {
+        videoContainer.classList.add('video-playing');
+    });
+
+    video.addEventListener('pause', () => {
+        videoContainer.classList.remove('video-playing');
+    });
 }

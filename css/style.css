@@ -178,6 +178,7 @@ img {
     color: var(--text-color);
     font-size: 0.9rem;
     transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center; /* 新增：使下拉菜单项文字居中 */
 }
 
 .dropdown-item:hover {
@@ -230,11 +231,47 @@ img {
     align-items: center;     /* 垂直居中 */
 }
 
-/* --- 视频容器 --- */
 .video-container {
-    width: 100%;
+    position: relative;
     background-color: #000; /* 视频加载时的黑色背景 */
 }
+
+/* --- 视频播放按钮样式 --- */
+.play-button-overlay {
+    /* 默认显示图标 */
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 10;
+    color: rgba(255, 255, 255, 0.8); /* 设置图标颜色和透明度 */
+    font-size: 80px; /* 调整图标大小 */
+    /* 添加 opacity 和 visibility 的过渡效果 */
+    transition: opacity 0.3s ease, visibility 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    /* 禁用指针事件，以便用户可以点击视频本身的控制栏 */
+    pointer-events: none; 
+}
+
+.play-button-overlay i {
+    /* 添加阴影以增强图标在浅色视频背景下的可见性 */
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+}
+
+.video-container:hover .play-button-overlay {
+    color: #fff; /* 鼠标悬停时图标变不透明 */
+    transform: translate(-50%, -50%) scale(1.1); /* 轻微放大效果 */
+}
+
+/* 当视频正在播放时，隐藏播放按钮 */
+.video-container.video-playing .play-button-overlay {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.5); /* 添加缩小效果 */
+}
+
 
 /* --- 深色背景文本区域 --- */
 .dark-section {
@@ -811,14 +848,14 @@ img {
         background-color: #d1e3f3;
         max-height: 0;
         overflow: hidden;
-        padding: 0 0 0 30px;
+        padding: 0; /* 移除左侧内边距，以便文字可以居中 */
         transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
     }
 
     /* 移动端下拉菜单展开状态 */
     .nav-menu .dropdown.open .dropdown-menu {
-        max-height: 100%; /* 设定一个足够大的高度以容纳所有子项 */
-        padding: 0;
+        max-height: 500px; /* 设定一个足够大的高度以容纳所有子项，确保动画平滑 */
+        padding: 10px 0; /* 移除左侧内边距 */
     }
 
     /* 减小移动端下拉菜单项的垂直间距 */
