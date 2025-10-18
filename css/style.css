@@ -308,6 +308,7 @@ img {
     border-radius: 5px;
     font-weight: 700;
     transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
 }
 
 .btn-primary {
@@ -731,6 +732,13 @@ img {
     gap: 1.5rem; /* 设置列之间的间距 */
 }
 
+/* Villaem 产品页的租赁价格网格布局 */
+.price-section-grid-villaem {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 默认在桌面端显示为两列 */
+    gap: 1.5rem; /* 设置列之间的间距 */
+}
+
 .price-column .service-title {
     font-size: 1.2rem;
     margin-bottom: 0.25rem;
@@ -741,6 +749,104 @@ img {
     color: #777;
     margin-bottom: 1rem;
 }
+
+/* 滤芯系统 - 横向布局 */
+.filter-system-horizontal {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-system-horizontal .filter-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.filter-system-horizontal .filter-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* --- 滤芯系统 (Core Plus 页面) --- */
+.filter-system-text-only {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* --- 滤芯系统 (带图片网格布局) --- */
+.filter-system-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 桌面端为四列 */
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    text-align: center;
+}
+
+.filter-card img {
+    height: 80px;
+    margin: 0 auto 1rem;
+    object-fit: contain;
+}
+
+.filter-info {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.filter-info p:first-child {
+    margin-bottom: 0.5rem;
+}
+
+.filter-replacement {
+    background-color: var(--light-blue-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1e3f3;
+}
+
+.filter-replacement ul {
+    list-style-type: none; /* 移除列表项前的黑点 */
+    padding-left: 0;       /* 移除左侧内边距 */
+}
+
+/* --- 产品页三列布局 (Core Plus) --- */
+.product-layout-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr; /* 定义三列的比例 */
+    gap: 2rem;
+    align-items: start;
+}
+
+/* 移除原有的 product-detail-info 样式，因为现在它只是一个包装器 */
+.product-layout-grid .product-detail-info {
+    position: static;
+    z-index: auto;
+}
+
+/* 确保价格和行动按钮在第三列的顶部 */
+.price-action-column {
+    position: sticky;
+    top: 90px; /* 距离顶部导航栏的距离 */
+}
+
 
 /* --- 响应式设计 (移动端) --- */
 @media (max-width: 768px) {
@@ -778,9 +884,24 @@ img {
         grid-template-columns: 1fr 1fr;
     }
 
+    /* 在移动端，将 Villaem 的租赁服务并排显示 */
+    .price-section-grid-villaem {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /* 在移动端，将价格方案改为单列显示 */
     .price-layout-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* 在移动端，三列布局改为单列堆叠 */
+    .product-layout-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* 在移动端，将滤芯网格改为两列 */
+    .filter-system-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .product-detail-container {
@@ -788,7 +909,7 @@ img {
     }
 
     .product-detail-image img {
-        width: 70%; /* 确保图片在小屏幕上占满宽度 */
+        width: 60%; /* 确保图片在小屏幕上占满宽度 */
         height: auto;
     }
 
