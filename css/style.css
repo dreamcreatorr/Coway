@@ -751,6 +751,7 @@ img {
 }
 
 /* 滤芯系统 - 横向布局 */
+
 .filter-system-horizontal {
     display: flex;
     flex-direction: column;
@@ -802,6 +803,13 @@ img {
     height: 80px;
     margin: 0 auto 1rem;
     object-fit: contain;
+}
+
+.filter-card .filter-sub-text {
+    font-size: 0.8rem; /* 调小字体 */
+    font-weight: bold;
+    color: #6c757d;    /* 使用稍浅的灰色 */
+    margin-top: -0.25rem; /* 减少与上方标题的间距 */
 }
 
 .filter-info {
