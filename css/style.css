@@ -658,13 +658,64 @@ img {
 
 /* --- 产品价格区域 --- */
 .product-price {
-    margin-top: 2rem;
+    margin-top: -9rem;
     padding: 1.5rem;
-    background-color: var(--light-blue-bg);
     border-radius: 8px;
     border: 1px solid #d1e3f3;
 }
 
+/* 价格部分的全宽黑色背景容器 */
+.price-section-full-bg {
+    background-color: #252a31;
+    margin-top: 2rem;
+    color: #a9d7f6; /* 将字体颜色改为浅蓝色 */
+     /* --- 全宽背景魔法 --- */
+    width: 100vw; /* 宽度等于视口宽度 */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3rem calc(50vw - 50% + 20px); /* 动态计算左右内边距以对齐内容 */
+}
+
+/* 用于产品页价格和规格图片并排显示的容器 */
+.price-and-spec-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    max-width: 1000px; /* 设定一个最大宽度，使其比页面主体稍窄 */
+    margin: 0 auto; /* 使其在黑色背景区域内水平居中 */
+}
+
+.product-spec-image {
+    background-color: #252a31; /* 将背景改为黑色 */
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #444; /* 调整边框颜色以适应深色背景 */
+}
+
+.product-spec-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* 响应式调整：在较小屏幕上，图片显示在价格下方 */
+@media (max-width: 992px) {
+    .price-and-spec-container {        
+        grid-template-columns: 1fr; /* 变为单列布局 */
+    }
+    .product-price {
+        order: 2; /* 价格在下方 */
+        margin-top: 2rem;
+    }
+    .product-spec-image {
+        order: 1; /* 图片在上方 */
+        margin: 0 auto; /* 图片居中 */
+        border: none; /* 移除边框 */
+        padding: 0; /* 移除内边距 */
+        background-color: transparent; /* 使背景透明 */
+    }
+}
 .product-price h2 {
     font-size: 1.4rem; /* 调小标题字体 */
     margin-bottom: 1rem;
@@ -684,7 +735,7 @@ img {
 .price-option h3 {
     font-size: 1.1rem; /* 稍微增大价格字体 */
     font-weight: 700; /* 调小价格字体 */
-    color: var(--primary-color);
+    color: #a9d7f6;
     margin-bottom: -3px;
 }
 
@@ -800,7 +851,7 @@ img {
 }
 
 .filter-card img {
-    height: 80px;
+    height: 200px;
     margin: 0 auto 1rem;
     object-fit: contain;
 }
