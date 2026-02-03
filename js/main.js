@@ -377,27 +377,64 @@ function scrollToTop(duration) {
 }
 
 // --- 图片画廊左右滚动按钮逻辑 ---
+// This function now handles all image galleries on a page, including those with navigation dots.
 function initializeImageGallery() {
-    const galleryWrapper = document.querySelector('.image-gallery-wrapper');
-    if (!galleryWrapper) return;
+    const galleryWrappers = document.querySelectorAll('.image-gallery-wrapper');
+    if (galleryWrappers.length === 0) return;
 
-    const scrollContainer = galleryWrapper.querySelector('.image-gallery-scroll-container');
-    const prevBtn = galleryWrapper.querySelector('.prev-btn');
-    const nextBtn = galleryWrapper.querySelector('.next-btn');
+    galleryWrappers.forEach(galleryWrapper => {
+        const scrollContainer = galleryWrapper.querySelector('.image-gallery-scroll-container');
+        if (!scrollContainer) return;
 
-    if (!scrollContainer || !prevBtn || !nextBtn) return;
+        const prevBtn = galleryWrapper.querySelector('.prev-btn');
+        const nextBtn = galleryWrapper.querySelector('.next-btn');
+        
+        // The dots container is expected to be within the same parent as the gallery wrapper.
+        const parent = galleryWrapper.parentElement;
+        const dotsContainer = parent.querySelector('.gallery-dots');
+        const dots = dotsContainer ? dotsContainer.querySelectorAll('.dot') : null;
 
-    const scrollAmount = () => {
-        // 每次滚动一张图片的宽度
-        return scrollContainer.querySelector('img').clientWidth;
-    };
+        // Arrow button logic
+        if (prevBtn && nextBtn) {
+            const scrollAmount = () => {
+                // Scroll by the width of the container, which should hold one image.
+                return scrollContainer.clientWidth;
+            };
 
-    nextBtn.addEventListener('click', () => {
-        scrollContainer.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
-    });
+            nextBtn.addEventListener('click', () => {
+                scrollContainer.scrollBy({ left: scrollAmount(), behavior: 'smooth' });
+            });
 
-    prevBtn.addEventListener('click', () => {
-        scrollContainer.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+            prevBtn.addEventListener('click', () => {
+                scrollContainer.scrollBy({ left: -scrollAmount(), behavior: 'smooth' });
+            });
+        }
+
+        // Dots logic
+        if (dots && dots.length > 0) {
+            const updateDots = () => {
+                // Calculate the current index based on scroll position
+                const index = Math.round(scrollContainer.scrollLeft / scrollContainer.clientWidth);
+                dots.forEach((dot, i) => {
+                    // Add 'active' class to the current dot, remove from others
+                    dot.classList.toggle('active', i === index);
+                });
+            };
+
+            // Add click event to each dot
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    const width = scrollContainer.clientWidth;
+                    scrollContainer.scrollTo({ left: width * index, behavior: 'smooth' });
+                });
+            });
+
+            // Update dots when the user scrolls the gallery
+            scrollContainer.addEventListener('scroll', updateDots);
+            
+            // Set the initial active dot
+            updateDots();
+        }
     });
 }
 
@@ -437,4 +474,19 @@ function initializeVideoPlayer() {
     video.addEventListener('pause', () => {
         videoContainer.classList.remove('video-playing');
     });
+}
+
+// --- 产品图库：点击缩略图更新大图 ---
+function updateMainImage(thumbnail) {
+    // 找到同一容器内的大图元素
+    const container = thumbnail.closest('.product-detail-image');
+    const mainImage = container.querySelector('.main-image-display img');
+    
+    // 更新大图的来源
+    mainImage.src = thumbnail.src;
+    
+    // 更新缩略图的激活状态
+    const allThumbs = container.querySelectorAll('.thumb-img');
+    allThumbs.forEach(thumb => thumb.classList.remove('active'));
+    thumbnail.classList.add('active');
 }

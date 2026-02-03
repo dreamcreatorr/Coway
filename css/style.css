@@ -1084,3 +1084,76 @@ img {
         object-position: center; /* 关键属性：将图片居中显示 */
     }
 }
+
+/* --- Image Gallery Dots --- */
+.gallery-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* --- Product Detail Gallery (Main + Thumbnails) --- */
+.main-image-display {
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.main-image-display img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.thumbnail-slider {
+    overflow-x: auto;
+    padding-bottom: 5px;
+    -webkit-overflow-scrolling: touch; /* iOS 平滑滚动 */
+    scrollbar-width: none; /* Firefox 隐藏滚动条 */
+}
+
+.thumbnail-slider::-webkit-scrollbar {
+    display: none; /* Chrome/Safari 隐藏滚动条 */
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+}
+
+.thumb-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    opacity: 0.6;
+    transition: all 0.3s;
+    flex-shrink: 0; /* 防止图片被压缩 */
+}
+
+.thumb-img:hover {
+    opacity: 0.8;
+}
+
+.thumb-img.active {
+    border-color: var(--primary-color);
+    opacity: 1;
+}
