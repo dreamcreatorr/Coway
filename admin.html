@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coway 产品图片管理</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, "Noto Sans SC", sans-serif;
+      background: #f6f7fb;
+      color: #1f2937;
+    }
+    .container {
+      max-width: 900px;
+      margin: 48px auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      padding: 30px;
+    }
+    h1 { margin-top: 0; }
+    .row { display: grid; gap: 18px; }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    select, input, button {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      font-size: 1rem;
+    }
+    button {
+      border: none;
+      background: linear-gradient(135deg, #0ea5e9, #2563eb);
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    .button-group {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .button-group button { margin-top: 0; }
+    button#deleteBtn,
+    button#deleteBannerBtn,
+    button#deleteVideoBtn {
+      background: linear-gradient(135deg, #ef4444, #dc2626);
+    }
+    button#deleteBtn:hover:not(:disabled),
+    button#deleteBannerBtn:hover:not(:disabled),
+    button#deleteVideoBtn:hover:not(:disabled) {
+      opacity: 0.9;
+    }
+    .preview {
+      margin-top: 16px;
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+    }
+    .preview img {
+      max-width: 300px;
+      max-height: 300px;
+      object-fit: contain;
+      border-radius: 10px;
+      background: white;
+    }
+    .status {
+      margin-top: 12px;
+      min-height: 24px;
+      font-weight: 600;
+    }
+    .status.success { color: #15803d; }
+    .status.error { color: #b91c1c; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Coway 产品图片管理</h1>
+    <div class="row">
+      <div>
+        <label for="productSelect">选择产品</label>
+        <select id="productSelect"></select>
+      </div>
+
+      <div>
+        <label for="imageUrl">图片 URL（可选）</label>
+        <input id="imageUrl" type="url" placeholder="https://.../product.png" />
+      </div>
+
+      <div>
+        <label for="imageFile">上传新图片</label>
+        <input id="imageFile" type="file" accept="image/*" />
+      </div>
+
+      <div class="button-group">
+        <button id="saveBtn" type="button">保存图片</button>
+        <button id="deleteBtn" type="button">删除图片</button>
+      </div>
+
+      <div>
+        <label for="bannerImageUrl">Banner 图片 URL（可选）</label>
+        <input id="bannerImageUrl" type="url" placeholder="https://.../banner.jpg" />
+      </div>
+
+      <div>
+        <label for="bannerImageFile">上传 Banner 图片</label>
+        <input id="bannerImageFile" type="file" accept="image/*" />
+      </div>
+
+      <div class="button-group">
+        <button id="saveBannerBtn" type="button">保存 Banner</button>
+        <button id="deleteBannerBtn" type="button">删除 Banner</button>
+      </div>
+
+      <div>
+        <label for="videoUrl">视频 URL（可选）</label>
+        <input id="videoUrl" type="url" placeholder="https://.../video.mp4" />
+      </div>
+
+      <div>
+        <label for="videoFile">上传视频</label>
+        <input id="videoFile" type="file" accept="video/*" />
+      </div>
+
+      <div class="button-group">
+        <button id="saveVideoBtn" type="button">保存视频</button>
+        <button id="deleteVideoBtn" type="button">删除视频</button>
+      </div>
+    </div>
+
+    <div class="preview">
+      <img id="previewImage" src="" alt="当前产品图片预览" />
+    </div>
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+  </div>

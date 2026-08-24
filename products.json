@@ -4,8 +4,9 @@
         "name": "Massage Chair",
         "titleTag": "Coway Massage Chair - 按摩椅",
         "metaDescription": "探索 Coway 按摩椅，为您带来顶级的家庭按摩享受，彻底放松身心。",
-        "image": "https://via.placeholder.com/600x600.png?text=Massage+Chair",
-        "bannerImage": "images/promo-banner.jpg",
+        "image": "",
+        "bannerImage": "",
+        "video": "",
         "description": "Coway 按摩椅是您家中的私人按摩师。它集成了多种先进的按摩技术，如3D机芯、零重力模式和全身气囊包裹，为您提供从头到脚的全面放松，让您在家中即可享受奢华的按摩体验。",
         "specs": {
             "型号": "MC-ST01B",
@@ -25,6 +26,7 @@
         "metaDescription": "探索 Coway 按摩床，为您提供极致放松的按摩体验，缓解日常疲劳。",
         "image": "https://via.placeholder.com/600x600.png?text=Massage+Bed",
         "bannerImage": "images/promo-banner.jpg",
+        "video": "",
         "description": "Coway 按摩床结合了先进的按摩技术和人体工程学设计，提供全身心的放松。多种按摩模式，帮助您舒缓肌肉紧张，促进血液循环，享受专业级的理疗体验。",
         "specs": {
             "型号": "MB-S01",
@@ -40,8 +42,12 @@
         "metaDescription": "探索 Coway Pebble，一款小巧便携的按摩器，随时随地为您提供舒适的按摩。",
         "image": "https://via.placeholder.com/600x600.png?text=Pebble",
         "bannerImage": "images/promo-banner.jpg",
+        "video": "",
         "description": "Coway Pebble 是一款设计独特的便携式按摩器。其圆润的外形和轻巧的设计，让您可以轻松携带，随时随地享受针对性的按摩，有效缓解局部肌肉酸痛。",
-        "specs": { "型号": "HS-03", "特点": "便携设计, 多种振动模式, USB充电" },
+        "specs": {
+            "型号": "HS-03",
+            "特点": "便携设计, 多种振动模式, USB充电"
+        },
         "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>买断 (Outright)</p></div><div class=\"price-options-grid-2-col\"><div class=\"price-option text-center\"><h3>RM 450</h3></div></div></div>"
     },
     "mine": {
@@ -51,11 +57,14 @@
         "metaDescription": "探索 Coway Mine，一款为您量身定制的个人按摩器。",
         "image": "https://via.placeholder.com/600x600.png?text=Mine",
         "bannerImage": "images/promo-banner.jpg",
+        "video": "",
         "description": "Coway Mine 是一款专为个人设计的按摩设备，提供个性化的按摩体验。它小巧而强大，能够满足您对舒适和放松的独特需求。",
-        "specs": { "型号": "HS-02", "特点": "个性化设置, 小巧强大, 人体工学设计" },
+        "specs": {
+            "型号": "HS-02",
+            "特点": "个性化设置, 小巧强大, 人体工学设计"
+        },
         "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>买断 (Outright)</p></div><div class=\"price-options-grid-2-col\"><div class=\"price-option text-center\"><h3>RM 330</h3></div></div></div>"
-    }
-    ,
+    },
     "mattress-smart": {
         "category": "mattress",
         "name": "Smart Mattress",
@@ -63,6 +72,7 @@
         "metaDescription": "探索 Coway Smart Mattress，一款能够适应您身体的智能床垫，提供前所未有的睡眠体验。",
         "image": "https://via.placeholder.com/600x600.png?text=Smart+Mattress",
         "bannerImage": "images/promo-banner.jpg",
+        "video": "",
         "description": "Coway 智能床垫，采用最新科技，能够感知并适应您的睡姿，提供动态支撑。通过智能调节，确保您每晚都能获得最舒适的深度睡眠。",
         "specs": {
             "型号": "待定",
@@ -96,7 +106,9 @@
         "image": "images/coway-mattress-eco-lite.png",
         "bannerImage": "images/promo-banner.jpg",
         "description": "Coway Eco-Lite 是一款注重环保和健康的床垫。它采用100%天然乳胶和有机棉面料，不含有害化学物质，为您提供一个安全、舒适且透气的睡眠环境。是追求自然生活方式人士的理想选择。",
-        "specs": { "特点": "环保材料, 防过敏, 高透气性" },
+        "specs": {
+            "特点": "环保材料, 防过敏, 高透气性"
+        },
         "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>租赁 (Monthly Rental)</p></div><div class=\"price-options-grid\"><div class=\"price-option text-center\"><p>5年合约</p><h3>RM 109 <small>/ 月</small></h3></div></div></div>"
     },
     "mattress-prime2": {
@@ -107,7 +119,9 @@
         "image": "images/coway-mattress-prime2.png",
         "bannerImage": "images/promo-banner.jpg",
         "description": "Coway Prime II 是一款革命性的智能床垫，允许您根据个人喜好调节床垫的软硬度。它采用高品质记忆棉和独立袋装弹簧，结合智能调节技术，为您和您的伴侣提供量身定制的完美睡眠支撑。",
-        "specs": { "特点": "软硬度可调, 零干扰设计, 7区支撑" },
+        "specs": {
+            "特点": "软硬度可调, 零干扰设计, 7区支撑"
+        },
         "priceHTML": "<div class=\"price-section\"><div class=\"price-option text-center\" style=\"margin-bottom: 0.5rem;\"><p>租赁 (Monthly Rental)</p></div><div class=\"price-options-grid\"><div class=\"price-option text-center\"><p>5年合约</p><h3>RM 189 <small>/ 月</small></h3></div></div></div>"
     },
     "mattress-prime": {
@@ -118,10 +132,11 @@
         "image": "https://via.placeholder.com/600x600.png?text=Prime",
         "bannerImage": "images/promo-banner.jpg",
         "description": "Coway Prime 床垫是经典与舒适的完美结合。采用高品质独立袋装弹簧，为您的身体提供稳定而均匀的支撑，确保您每晚都能安然入睡。",
-        "specs": { "特点": "经典设计, 持久耐用, 卓越支撑" },
+        "specs": {
+            "特点": "经典设计, 持久耐用, 卓越支撑"
+        },
         "priceHTML": "<p>价格信息即将公布</p>"
-    }
-,
+    },
     "bathroom-flowlet-plus": {
         "category": "bathroom",
         "name": "Flowlet Plus",
@@ -130,7 +145,9 @@
         "image": "https://via.placeholder.com/600x600.png?text=Flowlet+Plus",
         "bannerImage": "images/promo-banner.jpg",
         "description": "Coway Flowlet Plus 智能坐浴盆，结合了先进的清洁技术和人性化设计，为您带来前所未有的卫生和舒适体验。",
-        "specs": { "特点": "温水清洗, 暖风烘干, 智能除臭" },
+        "specs": {
+            "特点": "温水清洗, 暖风烘干, 智能除臭"
+        },
         "priceHTML": "<p>价格信息即将公布</p>"
     },
     "bathroom-flowlet": {
@@ -141,7 +158,9 @@
         "image": "https://via.placeholder.com/600x600.png?text=Flowlet",
         "bannerImage": "images/promo-banner.jpg",
         "description": "Coway Flowlet 电子坐浴盆，提供舒适的温水清洗功能，是提升卫浴体验的理想选择。",
-        "specs": { "特点": "温水清洗, 喷头自洁, 简易安装" },
+        "specs": {
+            "特点": "温水清洗, 喷头自洁, 简易安装"
+        },
         "priceHTML": "<p>价格信息即将公布</p>"
     },
     "bathroom-bateri-bidet": {
@@ -152,7 +171,9 @@
         "image": "https://via.placeholder.com/600x600.png?text=Bateri+Bidet",
         "bannerImage": "images/promo-banner.jpg",
         "description": "Coway Bateri Bidet 采用电池驱动，解决了卫生间无电源的烦恼。一键操作，简单方便，是升级家庭卫生的便捷方案。",
-        "specs": { "特点": "电池驱动, 无需插电, 简易安装" },
+        "specs": {
+            "特点": "电池驱动, 无需插电, 简易安装"
+        },
         "priceHTML": "<p>价格信息即将公布</p>"
     },
     "bathroom-fontana": {
@@ -163,7 +184,9 @@
         "image": "https://via.placeholder.com/600x600.png?text=Fontana",
         "bannerImage": "images/promo-banner.jpg",
         "description": "Coway Fontana 淋浴净化器，有效去除水中的余氯、铁锈和杂质，保护您的皮肤和头发免受化学物质的伤害，让每一次淋浴都成为一次纯净的享受。",
-        "specs": { "特点": "过滤余氯, 去除杂质, 保护肌肤" },
+        "specs": {
+            "特点": "过滤余氯, 去除杂质, 保护肌肤"
+        },
         "priceHTML": "<p>价格信息即将公布</p>"
     },
     "bathroom-manual-bidet": {
@@ -174,10 +197,11 @@
         "image": "https://via.placeholder.com/600x600.png?text=Manual+Bidet",
         "bannerImage": "images/promo-banner.jpg",
         "description": "Coway Manual Bidet 手动坐浴盆，无需电力，通过水压驱动，提供基础而有效的清洁功能，是经济环保的卫浴升级选择。",
-        "specs": { "特点": "无需用电, 水压驱动, 经济实惠" },
+        "specs": {
+            "特点": "无需用电, 水压驱动, 经济实惠"
+        },
         "priceHTML": "<p>价格信息即将公布</p>"
-    }
-,
+    },
     "ac-p-series": {
         "category": "air-conditioner",
         "name": "P-Series Air Conditioner",
@@ -205,8 +229,7 @@
             "特点": "时尚设计, 强劲制冷, 静音运行"
         },
         "priceHTML": "<p>价格信息即将公布</p>"
-    }
-,
+    },
     "outdoor-filter": {
         "category": "outdoor",
         "name": "Coway Outdoor Filter",
@@ -220,8 +243,7 @@
             "特点": "全屋过滤, 高效去除沉淀物, 经久耐用"
         },
         "priceHTML": "<p>价格信息即将公布</p>"
-    }
-,
+    },
     "laundry-washer-dryer": {
         "category": "laundry",
         "name": "Coway Washer Dryer",
@@ -235,5 +257,194 @@
             "特点": "洗烘一体, 智能感应, 高效节能"
         },
         "priceHTML": "<p>价格信息即将公布</p>"
+    },
+    "villaem-3": {
+        "category": "water",
+        "name": "Villaem 3",
+        "image": "images/coway_villaem3_chp_7320l.png",
+        "bannerImage": "",
+        "video": "",
+        "description": "冷热净水器，UV杀菌，适合大家庭。",
+        "specs": {
+            "型号": "Villaem 3"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "neo-plus": {
+        "category": "water",
+        "name": "Neo Plus",
+        "image": "/images/uploads/1786858970270_glaze.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "video": "",
+        "description": "设计纤薄的台式直饮机，适合现代厨房。",
+        "specs": {
+            "型号": "Neo Plus"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "ais": {
+        "category": "water",
+        "name": "AIS",
+        "image": "images/2.Coway AIS_ Filtered Water Dispenser with Ice Maker for Home and Office_files/coway-ais1.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "高级冷热净水器，带制冰功能。",
+        "specs": {
+            "型号": "AIS"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "ombak": {
+        "category": "water",
+        "name": "Ombak",
+        "image": "images/coway-water-purifier-ombak.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "专为大马家庭设计，50种水温水量设定。",
+        "specs": {
+            "型号": "Ombak"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "cinnamon": {
+        "category": "water",
+        "name": "Cinnamon",
+        "image": "images/coway-water-purifier-cinnamon.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "小巧紧凑，即热式净水器，节省空间。",
+        "specs": {
+            "型号": "Cinnamon"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "glaze": {
+        "category": "water",
+        "name": "Glaze",
+        "image": "/images/uploads/1786774295507_glaze.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "无水箱设计，即时过滤，提供新鲜纯净水。",
+        "specs": {
+            "型号": "Glaze"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "core-plus": {
+        "category": "water",
+        "name": "Core Plus",
+        "image": "images/coway-water-purifier-coreplus.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "大容量落地式净水器，适合办公室或大家庭。",
+        "specs": {
+            "型号": "Core Plus"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "lucy-plus": {
+        "category": "water",
+        "name": "Lucy Plus",
+        "image": "images/coway-water-purifier-lucyplus.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "冰水、冷水、热水三合一，满足多样化需求。",
+        "specs": {
+            "型号": "Lucy Plus"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "dazzie": {
+        "category": "water",
+        "name": "Dazzie",
+        "image": "images/coway-water-purifier-dazzie.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "大容量常温冷水净水器，适合办公室或高用量家庭。",
+        "specs": {
+            "型号": "Dazzie"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "harry": {
+        "category": "water",
+        "name": "Harry",
+        "image": "images/coway-water-purifier-harry.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "超大容量，持续供应纯净水，商业场所首选。",
+        "specs": {
+            "型号": "Harry"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "inception": {
+        "category": "water",
+        "name": "Inception",
+        "image": "images/coway-water-purifier-inception.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "结合净水与电解水功能，提供健康碱性水。",
+        "specs": {
+            "型号": "Inception"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "neon": {
+        "category": "water",
+        "name": "Neon",
+        "image": "images/coway-water-purifier-neon.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "简约时尚，冷热双温，适合追求简约生活的您。",
+        "specs": {
+            "型号": "Neon"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "kecil": {
+        "category": "water",
+        "name": "Kecil",
+        "image": "images/coway-water-purifier-kecil.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "即热式无水箱设计，机身纤巧，一键获取纯净水。",
+        "specs": {
+            "型号": "Kecil"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "noble": {
+        "category": "air",
+        "name": "Noble",
+        "image": "images/coway_noble_sp_2021a_gray.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "旗舰级空气净化器，360度全方位净化，设计优雅。",
+        "specs": {
+            "型号": "Noble"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "storm-2": {
+        "category": "air",
+        "name": "Storm II",
+        "image": "images/coway-air-purifier-storm-2.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "强力循环风扇，快速净化室内空气。",
+        "specs": {
+            "型号": "Storm II"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "lombok-3": {
+        "category": "air",
+        "name": "Lombok III",
+        "image": "images/coway-air-purifier-lombok-3.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "高效去除有害气体，适合家庭使用。",
+        "specs": {
+            "型号": "Lombok III"
+        },
+        "priceHTML": "<p>价格待更新</p>"
+    },
+    "tuba": {
+        "category": "air",
+        "name": "Tuba",
+        "image": "images/coway-air-purifier-tuba.png",
+        "bannerImage": "images/promo-banner.jpg",
+        "description": "智能感应，自动调节净化模式。",
+        "specs": {
+            "型号": "Tuba"
+        },
+        "priceHTML": "<p>价格待更新</p>"
     }
 }

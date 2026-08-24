@@ -1,3 +1,95 @@
+// --- 仅同步产品主图：从 products.json 读取最新 image，不改标题/描述等内容 ---
+async function syncProductImageFromJson() {
+    const productId = document.body?.dataset?.productId;
+    if (!productId) return;
+
+    try {
+        const response = await fetch('products.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Failed to load products.json');
+
+        const products = await response.json();
+        const product = products[productId];
+
+        if (!product || !product.image) return;
+
+        const imageEls = document.querySelectorAll('[data-product-image]');
+        if (!imageEls.length) return;
+
+        imageEls.forEach((imageEl) => {
+            imageEl.src = product.image;
+            imageEl.setAttribute('src', product.image);
+            imageEl.alt = product.name || imageEl.alt || productId;
+        });
+    } catch (error) {
+        console.error('syncProductImageFromJson error:', error);
+    }
+}
+
+async function syncProductBannerImageFromJson() {
+    const productId = document.body?.dataset?.productId;
+    if (!productId) return;
+
+    try {
+        const response = await fetch('products.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Failed to load products.json');
+
+        const products = await response.json();
+        const product = products[productId];
+
+        if (!product || !product.bannerImage) return;
+
+        const bannerEls = document.querySelectorAll('.promo-banner img, [data-product-banner]');
+        if (!bannerEls.length) return;
+
+        bannerEls.forEach((bannerEl) => {
+            bannerEl.src = product.bannerImage;
+            bannerEl.setAttribute('src', product.bannerImage);
+            bannerEl.alt = product.name ? `${product.name} 横幅` : (bannerEl.alt || 'Product banner');
+        });
+    } catch (error) {
+        console.error('syncProductBannerImageFromJson error:', error);
+    }
+}
+
+async function syncProductVideoFromJson() {
+    const productId = document.body?.dataset?.productId;
+    if (!productId) return;
+
+    try {
+        const response = await fetch('products.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Failed to load products.json');
+
+        const products = await response.json();
+        const product = products[productId];
+
+        if (!product || !product.video) return;
+
+        const videoSources = document.querySelectorAll('.video-container source, [data-product-video]');
+        if (!videoSources.length) return;
+
+        videoSources.forEach((source) => {
+            source.src = product.video;
+            source.setAttribute('src', product.video);
+        });
+    } catch (error) {
+        console.error('syncProductVideoFromJson error:', error);
+    }
+}
+
+// --- 页面加载时根据URL参数自动筛选产品 ---
+document.addEventListener('DOMContentLoaded', () => {
+    loadLayout();
+    syncProductImageFromJson();
+    syncProductBannerImageFromJson();
+    syncProductVideoFromJson();
+    loadProductDetails();
+    initializeContactForm();
+    setupBackToTopButton();
+    initializeImageGallery();
+    setupWhatsAppButton();
+    initializeVideoPlayer();
+});
+
 // --- 动态加载头部和尾部 ---
 async function loadComponent(url, placeholderId, isheader = false) {
     try {
@@ -83,7 +175,8 @@ function initializeheaderScripts() {
     function toggleMenu() {
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
-        hamburger.setAttribute('aria-expanded', isOpened); // 更新 ARIA 属性
+        const isOpened = hamburger.classList.contains("active");
+        hamburger.setAttribute('aria-expanded', isOpened.toString()); // 更新 ARIA 属性
     }
 
     // 关闭整个菜单的函数
@@ -246,13 +339,14 @@ function initializeContactForm() {
 // --- 页面加载时根据URL参数自动筛选产品 ---
 document.addEventListener('DOMContentLoaded', () => {
     loadLayout();
-    loadProductDetails(); // 新增：加载产品详情页内容
+    syncProductImageFromJson();
+    loadProductDetails();
     initializeContactForm();
-    setupBackToTopButton(); // 设置“返回顶部”按钮
-    initializeImageGallery(); // 新增：初始化图片画廊
-    setupWhatsAppButton(); // 新增：设置 WhatsApp 按钮
+    setupBackToTopButton();
+    initializeImageGallery();
+    setupWhatsAppButton();
+    initializeVideoPlayer();
 });
-initializeVideoPlayer(); // 新增：初始化视频播放器
 
 // --- 产品详情页动态加载逻辑 ---
 async function loadProductDetails() {
@@ -284,9 +378,9 @@ async function loadProductDetails() {
 
             // 更新产品横幅和主图
             const bannerImage = document.getElementById('product-banner-image');
-            if (bannerImage) {
-                bannerImage.src = product.bannerImage;
-                bannerImage.alt = `${product.name} 横幅`;
+            const bannerImg = document.querySelector('.promo-banner img');
+            if (bannerImg && product.bannerImage) {
+                bannerImg.src = product.bannerImage;
             }
             document.getElementById('product-image').src = product.image;
             document.getElementById('product-image').alt = product.name;
@@ -459,20 +553,29 @@ function setupWhatsAppButton() {
 
 // --- 视频播放器逻辑 ---
 function initializeVideoPlayer() {
-    const videoContainer = document.querySelector('.video-container');
-    if (!videoContainer) return;
+    const videoContainers = document.querySelectorAll('.video-container');
+    videoContainers.forEach(videoContainer => {
+        const video = videoContainer.querySelector('video');
+        if (!video) return;
 
-    const video = videoContainer.querySelector('video');
-    const playButton = videoContainer.querySelector('.play-button-overlay');
+        video.addEventListener('play', () => {
+            videoContainer.classList.add('video-playing');
+        });
 
-    if (!video || !playButton) return;
+        video.addEventListener('pause', () => {
+            videoContainer.classList.remove('video-playing');
+        });
 
-    video.addEventListener('play', () => {
-        videoContainer.classList.add('video-playing');
-    });
-
-    video.addEventListener('pause', () => {
-        videoContainer.classList.remove('video-playing');
+        const playButton = videoContainer.querySelector('.play-button-overlay');
+        if (playButton) {
+            playButton.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }
     });
 }
 
