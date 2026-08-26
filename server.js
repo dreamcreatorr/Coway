@@ -14,7 +14,6 @@ const { param, validationResult } = require('express-validator');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 const rootDir = __dirname;
 const productsPath = path.join(rootDir, 'products.json');
 const uploadDir = path.join(rootDir, 'images', 'uploads');
@@ -62,6 +61,9 @@ app.use(express.json({ limit: '5mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use('/images/uploads', express.static(uploadDir));
 app.use(express.static(rootDir));
+app.get('/', (req, res) => {
+  res.sendFile(path.join(rootDir, 'index.html'));
+});
 
 // Cookie解析器 (CSRF需要)
 app.use(cookieParser());
@@ -163,6 +165,24 @@ function writeProducts(products) {
   fs.renameSync(tempPath, productsPath);
 }
 
+// 安全删除已上传的磁盘文件（仅限 images/uploads 下带时间戳前缀的文件，避免误删静态资源）
+function safeUnlinkUpload(webPath) {
+  if (typeof webPath !== 'string' || !webPath) return;
+  // 只处理指向 images/uploads/ 的路径
+  if (!webPath.startsWith('/images/uploads/')) return;
+  const fileName = path.basename(webPath);
+  // 时间戳前缀：13位数字 + '_'
+  if (!/^\d{13}_/.test(fileName)) return;
+  const absPath = path.join(uploadDir, fileName);
+  try {
+    if (fs.existsSync(absPath)) {
+      fs.unlinkSync(absPath);
+    }
+  } catch (error) {
+    console.error('删除上传文件失败:', webPath, error.message);
+  }
+}
+
 app.get('/api/products', (req, res) => {
     const products = readProducts();
   const list = Object.entries(products).map(([id, product]) => ({
@@ -193,6 +213,11 @@ app.post('/api/products/:id/image',
     }
 
     let imagePath = req.body.image || '';
+
+    // 若字段被置空（删除），且旧值指向已上传文件，则清理磁盘文件
+    if (!imagePath && products[id].image) {
+      safeUnlinkUpload(products[id].image);
+    }
 
     if (req.file) {
       imagePath = `/images/uploads/${req.file.filename}`;
@@ -227,6 +252,11 @@ app.post('/api/products/:id/banner-image',
 
     let bannerImagePath = req.body.bannerImage || '';
 
+    // 若字段被置空（删除），且旧值指向已上传文件，则清理磁盘文件
+    if (!bannerImagePath && products[id].bannerImage) {
+      safeUnlinkUpload(products[id].bannerImage);
+    }
+
     if (req.file) {
       bannerImagePath = `/images/uploads/${req.file.filename}`;
     }
@@ -259,6 +289,11 @@ app.post('/api/products/:id/video',
     }
 
     let videoPath = req.body.video || '';
+
+    // 若字段被置空（删除），且旧值指向已上传文件，则清理磁盘文件
+    if (!videoPath && products[id].video) {
+      safeUnlinkUpload(products[id].video);
+    }
 
     if (req.file) {
       videoPath = `/images/uploads/${req.file.filename}`;
@@ -295,6 +330,4 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Coway admin server is running on http://localhost:${PORT}`);
-});
+module.exports = app;

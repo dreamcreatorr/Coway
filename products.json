@@ -318,7 +318,7 @@
     "glaze": {
         "category": "water",
         "name": "Glaze",
-        "image": "/images/uploads/1786774295507_glaze.png",
+        "image": "/images/uploads/1787572302533_glaze.png",
         "bannerImage": "images/promo-banner.jpg",
         "description": "无水箱设计，即时过滤，提供新鲜纯净水。",
         "specs": {
@@ -329,7 +329,7 @@
     "core-plus": {
         "category": "water",
         "name": "Core Plus",
-        "image": "images/coway-water-purifier-coreplus.png",
+        "image": "",
         "bannerImage": "images/promo-banner.jpg",
         "description": "大容量落地式净水器，适合办公室或大家庭。",
         "specs": {

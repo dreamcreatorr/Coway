@@ -96,11 +96,6 @@
       </div>
 
       <div>
-        <label for="imageUrl">图片 URL（可选）</label>
-        <input id="imageUrl" type="url" placeholder="https://.../product.png" />
-      </div>
-
-      <div>
         <label for="imageFile">上传新图片</label>
         <input id="imageFile" type="file" accept="image/*" />
       </div>
@@ -111,11 +106,6 @@
       </div>
 
       <div>
-        <label for="bannerImageUrl">Banner 图片 URL（可选）</label>
-        <input id="bannerImageUrl" type="url" placeholder="https://.../banner.jpg" />
-      </div>
-
-      <div>
         <label for="bannerImageFile">上传 Banner 图片</label>
         <input id="bannerImageFile" type="file" accept="image/*" />
       </div>
@@ -123,11 +113,6 @@
       <div class="button-group">
         <button id="saveBannerBtn" type="button">保存 Banner</button>
         <button id="deleteBannerBtn" type="button">删除 Banner</button>
-      </div>
-
-      <div>
-        <label for="videoUrl">视频 URL（可选）</label>
-        <input id="videoUrl" type="url" placeholder="https://.../video.mp4" />
       </div>
 
       <div>
@@ -147,3 +132,154 @@
 
     <div id="status" class="status" role="status" aria-live="polite"></div>
   </div>
+
+  <script>
+    // ===== 关联后端（server.js）管理工具 =====
+    // admin 页直接调用后端上传接口，将文件保存到 images/uploads 并写入 products.json，
+    // 客户页面通过 main.js 读取 products.json 即可看到更新。
+
+    // 1) 产品清单（value 必须是 products.json 中的产品 id）
+    var PRODUCTS = [
+      { value: 'villaem-3',   name: 'Coway Villaem 3', page: 'product-villaem3.html' },
+      { value: 'core-plus',   name: 'Core Plus',       page: 'product-coreplus.html' },
+      { value: 'harry',       name: 'Harry',           page: 'product-harry.html' },
+      { value: 'lucy-plus',   name: 'Lucy Plus',       page: 'product-lucyplus.html' },
+      { value: 'dazzie',      name: 'Dazzie',          page: 'product-dazzie.html' },
+      { value: 'neo-plus',    name: 'Neo Plus',        page: 'product-neoplus.html' },
+      { value: 'cinnamon',    name: 'Cinnamon',        page: 'product-cinnamon.html' },
+      { value: 'kecil',       name: 'Kecil',           page: 'product-kecil.html' },
+      { value: 'glaze',       name: 'Glaze',           page: 'product-glaze.html' },
+      { value: 'ais',         name: 'AIS',             page: 'product-ais.html' },
+      { value: 'ombak',       name: 'Ombak',           page: 'product-ombak.html' },
+      { value: 'inception',   name: 'Inception',       page: 'product-inception.html' },
+      { value: 'neon',        name: 'Neon',            page: 'product-neon.html' },
+      { value: 'noble',       name: 'Noble',           page: 'product-noble.html' },
+      { value: 'storm-2',     name: 'Storm II',        page: 'product-storm2.html' },
+      { value: 'lombok-3',    name: 'Lombok III',      page: 'product-lombok3.html' },
+      { value: 'tuba',        name: 'Tuba',            page: 'product-tuba.html' }
+    ];
+
+    // 填充下拉选择器的产品列表
+    var productSelect = document.getElementById('productSelect');
+    PRODUCTS.forEach(function (p) {
+      var opt = document.createElement('option');
+      opt.value = p.value;
+      opt.textContent = p.name + '（' + p.page + '）';
+      productSelect.appendChild(opt);
+    });
+
+    // 2) 状态提示工具
+    function setStatus(msg, type) {
+      var el = document.getElementById('status');
+      el.textContent = msg;
+      el.className = 'status' + (type ? ' ' + type : '');
+    }
+
+    // 3) 图片/视频本地预览
+    document.getElementById('imageFile').addEventListener('change', function (e) {
+      var file = e.target.files && e.target.files[0];
+      if (!file) return;
+      if (!file.type.startsWith('image/')) {
+        setStatus('请选择图片文件', 'error');
+        return;
+      }
+      document.getElementById('previewImage').src = URL.createObjectURL(file);
+      setStatus('已加载预览：' + file.name + '（点“保存图片”后上传到服务器）', 'success');
+    });
+
+    // 4) CSRF token 获取（后端要求）
+    var csrfToken = '';
+    function getCsrfToken() {
+      return fetch('/api/csrf-token', { credentials: 'same-origin' })
+        .then(function (res) { return res.json(); })
+        .then(function (data) { csrfToken = data.csrfToken; })
+        .catch(function () { csrfToken = ''; });
+    }
+
+    // 保存（上传）到后端
+    function handleSave(btnId) {
+      var cfg = {
+        saveBtn:       { file: 'imageFile',       endpoint: '/api/products/{id}/image',        field: 'image',       desc: '产品图片' },
+        saveBannerBtn: { file: 'bannerImageFile', endpoint: '/api/products/{id}/banner-image', field: 'bannerImage', desc: 'Banner' },
+        saveVideoBtn:  { file: 'videoFile',       endpoint: '/api/products/{id}/video',        field: 'video',       desc: '视频' }
+      }[btnId];
+      if (!cfg) return;
+
+      var productId = productSelect.value;
+      if (!productId) { setStatus('请先选择产品', 'error'); return; }
+
+      var file = document.getElementById(cfg.file).files[0];
+      if (!file) { setStatus('请先选择文件上传', 'error'); return; }
+
+      var formData = new FormData();
+      formData.append(cfg.field, file);
+
+      setStatus('正在上传…', 'success');
+      fetch(cfg.endpoint.replace('{id}', encodeURIComponent(productId)), {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'CSRF-Token': csrfToken },
+        body: formData
+      })
+        .then(function (res) {
+          if (!res.ok) { return res.json().then(function (d) { throw new Error(d.message || d.error || '保存失败'); }); }
+          return res.json();
+        })
+        .then(function (data) {
+          setStatus('已保存：' + cfg.desc + ' → ' + data[cfg.field], 'success');
+        })
+        .catch(function (err) {
+          console.error(err);
+          setStatus('保存失败：' + err.message, 'error');
+        });
+    }
+
+    // 删除（把字段置空）
+    function handleDelete(btnId) {
+      var cfg = {
+        deleteBtn:       { endpoint: '/api/products/{id}/image',        field: 'image',       desc: '产品图片' },
+        deleteBannerBtn: { endpoint: '/api/products/{id}/banner-image', field: 'bannerImage', desc: 'Banner' },
+        deleteVideoBtn:  { endpoint: '/api/products/{id}/video',        field: 'video',       desc: '视频' }
+      }[btnId];
+      if (!cfg) return;
+
+      var productId = productSelect.value;
+      if (!productId) { setStatus('请先选择产品', 'error'); return; }
+
+      if (!confirm('确定要删除 ' + cfg.desc + ' 吗？')) return;
+
+      var formData = new FormData();
+      formData.append(cfg.field, '');
+
+      fetch(cfg.endpoint.replace('{id}', encodeURIComponent(productId)), {
+        method: 'POST',
+        credentials: 'same-origin',
+        headers: { 'CSRF-Token': csrfToken },
+        body: formData
+      })
+        .then(function (res) {
+          if (!res.ok) { return res.json().then(function (d) { throw new Error(d.message || d.error || '删除失败'); }); }
+          return res.json();
+        })
+        .then(function () {
+          setStatus('已删除：' + cfg.desc, 'success');
+        })
+        .catch(function (err) {
+          console.error(err);
+          setStatus('删除失败：' + err.message, 'error');
+        });
+    }
+
+    // 5) 绑定按钮 & 初始化 CSRF
+    document.getElementById('saveBtn').addEventListener('click', function () { handleSave('saveBtn'); });
+    document.getElementById('saveBannerBtn').addEventListener('click', function () { handleSave('saveBannerBtn'); });
+    document.getElementById('saveVideoBtn').addEventListener('click', function () { handleSave('saveVideoBtn'); });
+
+    document.getElementById('deleteBtn').addEventListener('click', function () { handleDelete('deleteBtn'); });
+    document.getElementById('deleteBannerBtn').addEventListener('click', function () { handleDelete('deleteBannerBtn'); });
+    document.getElementById('deleteVideoBtn').addEventListener('click', function () { handleDelete('deleteVideoBtn'); });
+
+    getCsrfToken();
+  </script>
+</body>
+</html>
